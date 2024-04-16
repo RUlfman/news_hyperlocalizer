@@ -14,19 +14,20 @@ def story_index(request):
     filter_created = request.GET.get('created', '')
     filter_source = request.GET.get('source', '')
 
-    # Default filter options
-    default_filter = timezone.now() - timedelta(days=2)
-
     # Apply sorting criteria
     if sort_criteria == '-created':
         stories = Story.objects.order_by('-created')
+    elif sort_criteria == 'created':
+        stories = Story.objects.order_by('created')
     elif sort_criteria == '-updated':
-        stories = Story.objects.filter(updated__gte=default_filter).order_by('-updated')
+        stories = Story.objects.order_by('-updated')
+    elif sort_criteria == 'updated':
+        stories = Story.objects.order_by('updated')
     elif sort_criteria == 'title':
         stories = Story.objects.order_by('title')
     elif sort_criteria == 'source':
         stories = Story.objects.order_by('source__name')
-    elif sort_criteria == 'needs':
+    elif sort_criteria == '-needs_sum':
         stories = Story.objects.annotate(
             needsSum=Sum('needsKnow') + Sum('needsUnderstand') + Sum('needsFeel') + Sum('needsDo')
         ).order_by('-needsSum')

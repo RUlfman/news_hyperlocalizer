@@ -8,22 +8,22 @@
             <div class="col-md-4">
                 <label for="sort">Sort by:</label>
                 <select name="sort" id="sort" class="form-select">
-                    <option value="name">Name (A-Z)</option>
-                    <option value="-name">Name (Z-A)</option>
-                    <option value="website">Website (A-Z)</option>
-                    <option value="-website">Website (Z-A)</option>
+                    <option value="name" {% if request.GET.sort == 'name' %}selected{% endif %}>Naam (A-Z)</option>
+                    <option value="-name" {% if request.GET.sort == '-name' %}selected{% endif %}>Naam (Z-A)</option>
+                    <option value="website" {% if request.GET.sort == 'website' %}selected{% endif %}>Website (A-Z)</option>
+                    <option value="-website" {% if request.GET.sort == '-website' %}selected{% endif %}>Website (Z-A)</option>
                 </select>
             </div>
             <div class="col-md-4">
-                <label for="name">Filter by name:</label>
-                <input type="text" name="name" id="name" class="form-control">
+                <label for="name">Filter op naam:</label>
+                <input type="text" name="name" id="name" class="form-control" value="{{ request.GET.name }}">
             </div>
             <div class="col-md-4">
-                <label for="website">Filter by website:</label>
-                <input type="text" name="website" id="website" class="form-control">
+                <label for="website">Filter op website:</label>
+                <input type="text" name="website" id="website" class="form-control" value="{{ request.GET.website }}">
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Apply Filters</button>
+        <button type="submit" class="btn btn-primary">Filter Bronnen</button>
     </form>
 
      <table class="table table-striped">

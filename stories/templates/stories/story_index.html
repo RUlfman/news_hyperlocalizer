@@ -10,17 +10,17 @@
         <div class="col-md-3">
             <label for="sort">Sort by:</label>
             <select name="sort" id="sort" class="form-select">
-                <option value="title" {% if request.GET.sort == "title" %}selected{% endif %}>Title (A-Z)</option>
-                <option value="-title" {% if request.GET.sort == "-title" %}selected{% endif %}>Title (Z-A)</option>
+                <option value="title" {% if request.GET.sort == "title" %}selected{% endif %}>Titel (A-Z)</option>
                 <option value="created" {% if request.GET.sort == "created" %}selected{% endif %}>
-                    Created Date (oldest first)</option>
+                    Aangemaakt op (oudste eerst)</option>
                 <option value="-created" {% if request.GET.sort == "-created" %}selected{% endif %}>
-                    Created Date (newest first)</option>
+                    Aangemaakt op (nieuwste eerst)</option>
                 <option value="updated" {% if request.GET.sort == "updated" %}selected{% endif %}>
-                    Updated Date (oldest first)</option>
+                    Updated op (oudste eerst)</option>
                 <option value="-updated" {% if request.GET.sort == "-updated" %}selected{% endif %}>
-                    Updated Date (newest first)</option>
-                <option value="source" {% if request.GET.sort == "source" %}selected{% endif %}>Source (A-Z)</option>
+                    Updated op (nieuwste eerst)</option>
+                <option value="source" {% if request.GET.sort == "source" %}selected{% endif %}>Bron (A-Z)</option>
+                <option value="-needs_sum" {% if request.GET.sort == "-needs_sum" %}selected{% endif %}>Userneeds (aflopend)</option>
             </select>
         </div>
         <div class="col-md-3">

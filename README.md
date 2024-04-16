@@ -35,13 +35,27 @@ docker build -t news_hyperlocalizer .
 
 ### Step 3: Run the Docker Container
 
-Once the Docker image is built, you can run a Docker container based on that image. Use the following command:
+Once the Docker image is built, you can run a Docker container and mount the project directory based on that image. Use the following command:
 
 ```bash
-docker run -p 8000:8000 your-django-app news_hyperlocalizer
+docker run -p 8000:8000 -v "[/path/to/your/django/project]:/app" news_hyperlocalizer
 ````
 
-This command will start the Django development server inside the Docker container, and your app will be accessible at http://localhost:8000 in your web browser.
+Note: replace `[/path/to/your/django/project]` with the root directory of the repository (the same folder where the `Dockerfile` file is located). Do **not** replace the `:/app part`, or it will not work.
+
+This command will mount your project directory, and start the Django development server inside the Docker container, and your app will be accessible at http://localhost:8000 in your web browser.
+
+### Step 4: Configure your IDE
+
+The last step is configuring your IDE. I'm going to assume you're using PyCharm. Other IDE's should have similar workflows.
+
+1. Open PyCharm, Go to "File" > "Settings" > "Project: YourProjectName" > "Python Interpreter".
+2. Click "Add Interpreter" and choose Docker.
+3. PyCharm should have automatically selected everything you need, except the server. This is `unix:///var/run/docker.sock` for Unix/Linux or `tcp://localhost:2375` for Windows with Docker Desktop.
+4. Click OK. PyCharm will call the build command. Make sure your docker container is running (step 3). Be patient, the build may take a few minutes to complete!
+5. After PyCharm has run its build, you should now be able to set the interpreter, this should be automatically set to something like `/usr/local/bin/python`.
+
+**That's it!** You have now mounted your docker image, and configured your IDE. Any changes made to the codebase will now automatically be applied to the docker image, and will be viewable at http://localhost:8000 in your web browser. 
 
 ### Additional Commands
 - To stop the Docker container, press `Ctrl + C` in the terminal where it's running.
@@ -50,10 +64,12 @@ This command will start the Django development server inside the Docker containe
 - To remove the Docker image, use the ```docker rmi``` command followed by the image ID or name.
 
 ### Development Workflow
-1. Develop your Django app locally on your machine.
-2. Commit your changes to Git and push them to the remote repository.
-3. Pull changes on other devices or environments where you want to deploy the app.
-4. Rebuild and run the Docker container on those devices or environments.
+1. Pull changes from the Git remote repository.
+2. (Re)Build the docker image. **Note**: this is *only* necessary if there were changes to dependencies!
+3. Run the docker image. After you run it the first time with commands, it should be visible in the Docker Desktop app (Windows) where you can run it by clicking the play button.
+4. Develop your Django app locally on your machine.
+5. If you made changes to the dependencies (e.g. you installed a new package), rebuild `requirements.txt` (see *note* below)
+6. Commit your changes to Git and push them to the remote repository.
 
 ### Note
 - Make sure to update the `requirements.txt` file with any new Python dependencies you install. You can automate this by running 
