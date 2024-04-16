@@ -1,5 +1,5 @@
 # Use the official Python image as a base image
-FROM python:3.8
+FROM python:3
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -11,7 +11,16 @@ WORKDIR /app
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
 
-# Install dependencies
+# Install virtualenv
+RUN pip install virtualenv
+
+# Create a virtual environment
+RUN virtualenv venv
+
+# Activate the virtual environment
+RUN . venv/bin/activate
+
+# Install dependencies within the virtual environment
 RUN pip install -r requirements.txt
 
 # Copy the current directory contents into the container at /app
