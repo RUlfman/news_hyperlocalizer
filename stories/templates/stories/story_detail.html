@@ -3,45 +3,79 @@
 
 {% block page_content %}
 <h1>{{ story.title }}</h1>
+<p class="card-text">
+    {{ story.created|naturaltime }}{% if story.updated %}, updated {{ story.updated|naturaltime }}{% endif %}
+    <br>Door {{ story.author }} op <a href="{{ story.source.website }}" target="_blank">{{ story.source.name }}</a>
+    <br>Bekijk verhaal bij bron <a href="{{ story.url }}">hier</a>.
+</p>
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-6">
         {% if story.image %}
             <img src="{{ story.image.url }}" width="100%">
         {% endif %}
     </div>
-    <div class="col-md-4">
-        <p class="card-text">Van <a href="{{ story.source.website }}" target="_blank">{{ story.source.name }}</a>
-            <br>{{ story.created|naturaltime }}{% if story.updated %}, updated {{ story.updated|naturaltime }}{% endif %}
-            <br>Door {{ story.author }}
-        </p>
-        <h5>User needs:</h5>
-        <p class="card-text">
-            User needs: {{ story.needs_sum }}
-            <br> Hoofd drijfveer: {{ story.needs_primary }}
-            <br> Know: {{ story.needsKnow }}
-            <br> Understand: {{ story.needsUnderstand }}
-            <br> Feel: {{ story.needsFeel }}
-            <br> Do: {{ story.needsDo }}
-        </p>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6">
+                <canvas id="user-needs-chart" width="200" height="200"></canvas>
+            </div>
+            <div class="col-md-6">
+                <p class="card-text">
+                    <h5>User needs:</h5>
+                    User needs: {{ story.needs_sum }}
+                    <br> Hoofd drijfveer: {{ story.needs_primary }}
+                    <br> Know: {{ story.needsKnow }}
+                    <br> Understand: {{ story.needsUnderstand }}
+                    <br> Feel: {{ story.needsFeel }}
+                    <br> Do: {{ story.needsDo }}
+                </p>
+            </div>
+        </div>
         <h5>Samenvatting:</h5>
         <p>{{ story.summary }}</p>
         <br>
-        <h5>Bron:</h5>
-        <p><a href="{{ story.url }}">{{ story.url }}</a></p>
     </div>
+</div>
 
-    <div class="row">
-        <div class="col-md-12">
-            <h5>Het verhaal...</h5>
-            <p>{{ story.story }}</p>
-        </div>
+<div class="row">
+    <div class="col-md-12">
+        <h5>Het verhaal...</h5>
+        <p>{{ story.story }}</p>
     </div>
+</div>
 
-    <div class="col-md-8">
-        <a href="{% url 'story_index' %}"
-           class="btn btn-primary">
-            Terug
-        </a>
-    </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var ctx = document.getElementById('user-needs-chart').getContext('2d');
+    var userNeedsChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: ['Know', 'Understand', 'Feel', 'Do'],
+            datasets: [{
+                label: 'User Needs Scores',
+                data: [{{ story.needsKnow }}, {{ story.needsUnderstand }}, {{ story.needsFeel }}, {{ story.needsDo }}],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.5)',
+                    'rgba(54, 162, 235, 0.5)',
+                    'rgba(255, 206, 86, 0.5)',
+                    'rgba(75, 192, 192, 0.5)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: false
+        }
+    });
+</script>
+
+<div class="col-md-8">
+    <a href="{% url 'story_index' %}" class="btn btn-secondary">Terug</a>
 </div>
 {% endblock page_content %}
