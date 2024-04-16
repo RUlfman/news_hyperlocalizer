@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+    <h1>Locale Bronnen</h1>
+
+    <form method="GET">
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="sort">Sort by:</label>
+                <select name="sort" id="sort" class="form-select">
+                    <option value="name">Name (A-Z)</option>
+                    <option value="-name">Name (Z-A)</option>
+                    <option value="website">Website (A-Z)</option>
+                    <option value="-website">Website (Z-A)</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="name">Filter by name:</label>
+                <input type="text" name="name" id="name" class="form-control">
+            </div>
+            <div class="col-md-4">
+                <label for="website">Filter by website:</label>
+                <input type="text" name="website" id="website" class="form-control">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Apply Filters</button>
+    </form>
+
+     <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Website</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for source in sources %}
+            <tr onclick="window.location='{% url 'source_detail' source.pk %}';" style="cursor: pointer;">
+                <td>{{ source.name }}</td>
+                <td><a href="{{ source.website }}" target="_blank">{{ source.website }}</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+

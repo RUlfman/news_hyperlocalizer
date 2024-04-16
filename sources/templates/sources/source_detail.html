@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+    <h1>{{ source.name }}</h1>
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <th scope="row">Website</th>
+                <td><a href="{{ source.website }}" target="_blank">{{ source.website }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Land</th>
+                <td>{{ source.country }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Provincie</th>
+                <td>{{ source.province }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Regio</th>
+                <td>{{ source.region }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Gemeente</th>
+                <td>{{ source.municipality }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Soort medium</th>
+                <td>{{ source.medium }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Originele content?</th>
+                <td>{{ source.get_originalContent_display }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Frequentie uitgave</th>
+                <td>{{ source.get_releaseFrequency_display }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Is de uitgever commercieel?</th>
+                <td>{{ source.get_commercialPublisher_display }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Naam uitgever</th>
+                <td>{{ source.publisher }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Individu / organisatie</th>
+                <td>{{ source.get_individualOrOrganisation_display }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Soort inhoud</th>
+                <td>{{ source.get_contentType_display }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Spreidingsgebied</th>
+                <td>{{ source.contentArea }}</td>
+            </tr>
+            <tr>
+                <th scope="row">Kwaliteit van de content</th>
+                <td>{{ source.get_contentQuality_display }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <a href="{% url 'story_index' %}?source={{ source.id }}"
+               class="btn btn-primary">
+                Toon lokale verhalen van {{ source.name }}
+            </a>
+        </div>
+        <div class="col-md-6">
+            <a href="{% url 'source_index' %}"
+               class="btn btn-secondary">
+                Terug naar bronnen...
+            </a>
+        </div>
+    </div>
+{% endblock %}

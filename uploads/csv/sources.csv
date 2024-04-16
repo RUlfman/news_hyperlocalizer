@@ -1,0 +1,393 @@
+country,province,region,municipality,name,website,medium,originalContent,releaseFrequency,commercialPublisher,publisher,individualOrOrganisation,contentType,contentArea,contentQuality
+Nederland,Noord-Brabant,West-Brabant,West-Brabant,Zuidwestupdate,https://www.zuidwestupdate.nl/,Nieuwssite,YES,DAILY,NO,ZuidWest,ORGANIZATION,MIX,West-Brabant,HIGH
+Nederland,Noord-Brabant,West-Brabant,West-Brabant,Internetbode,https://www.internetbode.nl/,Nieuwssite,YES,DAILY,YES,Uitgeverij de Bode,ORGANIZATION,JOURNALISM,West-Brabant,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,West-Brabant,Weekblad 't Carillon,https://www.uitgeverijemdejong.nl/weekbladen/weekblad-t-carillon/,Krant,YES,WEEKLY,YES,Uitgeverij Em. de Jong,ORGANIZATION,JOURNALISM,Noord West-Brabant,LOW
+Nederland,Noord-Brabant,West-Brabant,West-Brabant,Bibliotheek West-Brabant,https://bibliotheekwb.op-shop.nl/,Bibliotheek,YES,WEEKLY,NO,De Bibliotheek West-Brabant,ORGANIZATION,SERVICE,West-Brabant,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Breda,Gemeente Breda,https://www.breda.nl/nieuws,Gemeentesite,YES,DAILY,NO,Gemeente,ORGANIZATION,SERVICE,Breda,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Breda,BredaVandaag,https://www.bredavandaag.nl/,Nieuwssite / krant,YES,DAILY,YES,Uitgeverij de Bode,ORGANIZATION,JOURNALISM,Breda,HIGH
+Nederland,Noord-Brabant,West-Brabant,Breda,Indebuurt Breda,https://indebuurt.nl/breda/,Nieuwssite,YES,DAILY,YES,DPG,ORGANIZATION,MIX,Breda,HIGH
+Nederland,Noord-Brabant,West-Brabant,Breda,Nieuws vandaag,https://nieuwsvandaag.nl/regio/,Nieuwssite,YES,WEEKLY,UNSURE,Nieuws Vandaag,ORGANIZATION,JOURNALISM,Breda,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Breda,Lokaal nieuws Breda,https://lokaalnieuwsbreda.nl/,Nieuwssite,NO,DAILY,UNSURE,Lokaal Nieuws Breda,ORGANIZATION,JOURNALISM,Breda,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Breda,BredaNu,https://bredanu.nl/,Nieuwssite,YES,DAILY,NO,BredaNu,ORGANIZATION,JOURNALISM,Breda,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Breda,Bibliotheek Breda,https://www.bibliotheekbreda.nl/iguana/www.main.cls?v=f774724f-7c02-488e-9dd7-4c99e3bba4bf,Bibliotheek,YES,UNSURE,NO,Bibliotheek Breda Nieuwe Veste,ORGANIZATION,SERVICE,Breda,LOW
+Nederland,Noord-Brabant,West-Brabant,Breda,Wijk Boeimeer Breda,https://wijkraadboeimeer.nl/nieuws/,Nieuwssite / krant,YES,UNSURE,NO,Stichting Wijkraad Boeimeer,ORGANIZATION,MIX,Wijk Boeimeer,LOW
+Nederland,Noord-Brabant,West-Brabant,Breda,Wijkraad Zandberg-Oost Breda,https://www.zandbergbreda.nl/,Nieuwssite / krant,YES,UNSURE,NO,Stichting Wijkraad Zandberg-Oost ,ORGANIZATION,MIX,Wijk Zandberg-Oost,LOW
+Nederland,Noord-Brabant,West-Brabant,Breda,Wijkblad Princenhage,https://wijkbladprincenhage.net/,Nieuwssite,YES,DAILY,NO,Stichting Wijkblad Princenhage,ORGANIZATION,MIX,Wijk Princenhage,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Breda,Krant De Nieuwe Meidoorn,https://www.denieuwemeidoorn.com/kopie-van-home-1,Krant,YES,UNSURE,NO,Stichting De Nieuwe Meidoorn,ORGANIZATION,MIX,Wijk Tuinzigt Westerpark,LOW
+Nederland,Noord-Brabant,West-Brabant,Breda,Wijkraad Westerpark,https://www.wijkraadwesterpark.nl/,Nieuwssite,YES,UNSURE,NO,Wijkraad,ORGANIZATION,MIX,Wijk Westerpark,LOW
+Nederland,Noord-Brabant,West-Brabant,Breda,Modern Prinsenbeek (hbnieuws.nl),https://hbnieuws.nl/modern-prinsenbeek,Nieuwssite,YES,DAILY,NO,HB Nieuws,ORGANIZATION,MIX,Wijk Prinsenbeek,LOW
+Nederland,Noord-Brabant,West-Brabant,Breda,Dorpsraad Teteringen,https://dorpsraad-teteringen.nl/nieuws/,Nieuwssite,YES,UNSURE,NO,Dorpsraad Teteringen,ORGANIZATION,MIX,Dorp Teteringen,LOW
+Nederland,Noord-Brabant,West-Brabant,Breda,Breda.nieuws.nl,http://breda.nieuws.nl/,Nieuwssite,MIX,UNSURE,NO,Nort Groep B.V.,ORGANIZATION,MIX,Breda,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Breda,Chasse Nieuws,https://www.chasse.nl/nl/pQJ3rHB/je-bezoek/nieuws?page=1,Theatersite,YES,UNSURE,YES,Chasse,ORGANIZATION,MIX,Breda,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Breda,Erfgoed Breda,https://erfgoed.breda.nl/nieuws,Site stichting,YES,UNSURE,NO,Gemeente Breda,ORGANIZATION,MIX,Breda,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Breda,Verbeter Breda,https://www.verbeterbreda.nl/nieuws,Site stichting,YES,UNSURE,NO,Verbeter Breda,ORGANIZATION,MIX,Breda,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Breda,Voedselbank Breda,https://voedselbankbreda.nl/facebook/,Site stichting,YES,UNSURE,NO,Voedselbank,ORGANIZATION,SERVICE,Breda,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Breda,Stadsarchief Breda,https://stadsarchief.breda.nl/actueel/nieuws,Site stichting,YES,UNSURE,NO,Gemeente Breda,ORGANIZATION,SERVICE,Breda,LOW
+Nederland,Noord-Brabant,West-Brabant,Breda,Urban Living Lab Breda,https://urbanlivinglabbreda.nl/berichten,Site stichting,YES,UNSURE,NO,Urban Living Lab,ORGANIZATION,MIX,Breda,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Woensdrecht,Gemeente Woensdrecht,https://www.woensdrecht.nl/nieuws,Gemeentesite,YES,WEEKLY,NO,Gemeente,ORGANIZATION,SERVICE,Woensdrecht,HIGH
+Nederland,Noord-Brabant,West-Brabant,Woensdrecht,KijkopWoensdrecht,https://www.kijkopwoensdrecht.nl/,Nieuwssite,YES,WEEKLY,YES,Kijk op Woensdrecht,ORGANIZATION,MIX,Woensdrecht,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Woensdrecht,Wij zijn Woensdrecht,https://www.wijzijnwoensdrecht.nl/nieuws,Nieuwssite,YES,WEEKLY,NO,Traverse groep,ORGANIZATION,MIX,Woensdrecht,LOW
+Nederland,Noord-Brabant,West-Brabant,Woensdrecht,Woensdrecht.nieuws.nl,https://woensdrecht.nieuws.nl/category/woensdrecht/,Nieuwssite,MIX,UNSURE,YES,Nort Groep B.V.,ORGANIZATION,MIX,Woensdrecht,LOW
+Nederland,Noord-Brabant,West-Brabant,Moerdijk,Gemeente Moerdijk,https://www.moerdijk.nl/Actueel,Gemeentesite,YES,WEEKLY,NO,Gemeente,ORGANIZATION,SERVICE,Moerdijk,HIGH
+Nederland,Noord-Brabant,West-Brabant,Moerdijk,West-Brabant.eu,https://www.west-brabant.eu/actueel,Site,YES,WEEKLY,NO,Regio,ORGANIZATION,SERVICE,Regio- West-Brabant,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Moerdijk,Nieuws Port of Moerdijk,https://www.portofmoerdijk.nl/nieuws/,Site haven,YES,UNSURE,YES,Havenbedrijf,ORGANIZATION,SERVICE,Moerdijk,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Moerdijk,Moerdijk onderneemt,https://www.moerdijkonderneemt.nl/regio-nieuws,Site,YES,DAILY,UNSURE,Moerdijk onderneemt,ORGANIZATION,JOURNALISM,Moerdijk,LOW
+Nederland,Noord-Brabant,West-Brabant,Moerdijk,Cultuur Moerdijk,https://cultuurmoerdijk.nl/nieuws-berichten,Site stichting,YES,UNSURE,NO,Stichting cultuur Moerdijk,ORGANIZATION,MIX,Moerdijk,LOW
+Nederland,Noord-Brabant,West-Brabant,Bergen op Zoom,Gemeente Bergen op Zoom,https://www.bergenopzoom.nl/nieuws,Gemeentesite,YES,WEEKLY,NO,Gemeente,ORGANIZATION,SERVICE,Bergen op Zoom,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Bergen op Zoom,stadindex.nl,https://www.stadindex.nl/nieuws/bergen-op-zoom,Nieuwssite,NO,WEEKLY,YES,Obedo (online marketingbedrijf),ORGANIZATION,MIX,Bergen op Zoom,LOW
+Nederland,Noord-Brabant,West-Brabant,Bergen op Zoom,Bergenopzoom.nieuws.nl,http://nieuws.nl/,Nieuwssite,YES,WEEKLY,YES,Regioactueel,ORGANIZATION,MIX,Bergen op Zoom,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Bergen op Zoom,Theater de Maagd,https://www.demaagd.nl/pQ4rWUY/nieuws/nieuws,Theatersite,YES,WEEKLY,YES,Theater de Maagd,ORGANIZATION,MIX,Bergen op Zoom,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Roosendaal,Gemeente Roosendaal,https://roosendaal.nl/nieuwsoverzicht,Gemeentesite,YES,WEEKLY,NO,Gemeente,ORGANIZATION,MIX,Roosendaal,HIGH
+Nederland,Noord-Brabant,West-Brabant,Roosendaal,Roosendaal Today,https://roosendaaltoday.nl/,Nieuwssite,MIX,DAILY,UNSURE,Roosendaal Today,ORGANIZATION,JOURNALISM,Roosendaal,HIGH
+Nederland,Noord-Brabant,West-Brabant,Roosendaal,Roosendaal.city,https://roosendaal.city/nieuws,Nieuwssite,NO,DAILY,UNSURE,Roosendaal City,ORGANIZATION,JOURNALISM,Roosendaal,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Roosendaal,Roosendaal Lokaal,https://www.roosendaallokaal.nl/,Nieuwssite,YES,DAILY,NO,Roosendaal Lokaal,ORGANIZATION,JOURNALISM,Roosendaal,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Roosendaal,Theater de Kring Roosendaal,https://www.dekringroosendaal.nl/,Theatersite,YES,UNSURE,NO,Stichting Schouwburg De Kring,ORGANIZATION,MIX,Roosendaal,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Steenbergen,Gemeente Steenbergen,https://www.gemeente-steenbergen.nl/nieuws_en_persberichten/,Gemeentesite,YES,WEEKLY,YES,Gemeente,ORGANIZATION,JOURNALISM,Steenbergen,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Steenbergen,Kijk op Steenbergen,https://www.kijkopsteenbergen.nl/,Nieuwssite,YES,WEEKLY,YES,"Steenbergen, Dinteloord, Nieuw-Vossemeer, Kruisland, Welberg, de Heen",ORGANIZATION,MIX,Steenbergen,LOW
+Nederland,Noord-Brabant,West-Brabant,Steenbergen,Steenbergse Courant,https://steenbergsecourant.nl/,Krant,MIX,UNSURE,YES,"Steenbergen, Dinteloord, Nieuw-Vossemeer, Kruisland, Welberg, de Heen",ORGANIZATION,JOURNALISM,Steenbergen,LOW
+Nederland,Noord-Brabant,West-Brabant,Steenbergen,Internetbode Steenbergen,https://www.internetbode.nl/steenbergen,Nieuwssite,MIX,DAILY,YES,Uitgeverij de Bode,ORGANIZATION,JOURNALISM,Steenbergen,HIGH
+Nederland,Noord-Brabant,West-Brabant,Steenbergen,Steenbergennieuws.nl,https://steenbergen.nieuws.nl/,,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,JOURNALISM,Steenbergen,LOW
+Nederland,Noord-Brabant,West-Brabant,Halderberge,Gemeente Halderberge,https://www.halderberge.nl/nieuwsoverzicht,Gemeentesite,YES,WEEKLY,NO,Gemeente Halderberge,ORGANIZATION,MIX,Halderberge,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Halderberge,Haldenberge.nieuws.nl,https://halderberge.nieuws.nl/category/gemeente/,Nieuwssite,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Halderberge,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Halderberge,Halderbergsecultuurmaand,https://www.halderbergsecultuurmaand.nl/nieuws--nieuwsbrief.html,Site stichting,YES,UNSURE,UNSURE,Gemeente Halderberge,ORGANIZATION,SERVICE,Halderberge,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Etten-Leur,Etten-Leur.nieuws.nl,https://etten-leur.nieuws.nl/category/gemeente/,Nieuwssite,MIX,WEEKLY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Etten-Leur,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Etten-Leur,Gemeente Etten-leur,https://www.etten-leur.nl/actueel/,Gemeentesite,YES,WEEKLY,NO,Gemeente Etten-leur,ORGANIZATION,SERVICE,Etten-Leur,HIGH
+Nederland,Noord-Brabant,West-Brabant,Etten-Leur,Theater de Nobelaer,https://www.denobelaer.nl/nieuws,Theatersite,YES,UNSURE,YES,De Nobelaer B.V.,ORGANIZATION,MIX,Etten-Leur,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Drimmelen,Drimmelen.nieuws.nl,https://drimmelen.nieuws.nl/category/gemeente/,Nieuwssite,MIX,WEEKLY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Drimmelen,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Drimmelen,Omroep Drimmelen,https://www.omroepdrimmelen.nl/,Omroep,MIX,DAILY,NO,Stichting Lokale Omroep Drimmelen,ORGANIZATION,MIX,Drimmelen,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Drimmelen,Gemeente Drimmelen,https://drimmelen.nl/nieuwsoverzicht,Gemeentesite,YES,WEEKLY,NO,Gemeente Drimmelen,ORGANIZATION,MIX,Drimmelen,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Altena,Gemeente Altena,https://www.gemeentealtena.nl/nieuws,Gemeentesite,YES,WEEKLY,NO,Gemeente Altena,ORGANIZATION,MIX,Gemeente Altena,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Altena,Altena.net,https://www.altena.net/trefwoorden/werkendam,Nieuwssite,YES,WEEKLY,NO,Mediaplein Altena.Net,ORGANIZATION,MIX,Altena,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Altena,Het Kontakt,https://www.hetkontakt.nl/altena,Nieuwssite,YES,DAILY,YES,Het Kontakt Edities B.V.,ORGANIZATION,JOURNALISM,Altena,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Altena,Altena TV,https://www.altenatv.nl/nieuws/,Omroep,YES,WEEKLY,NO,RTV Altena,ORGANIZATION,JOURNALISM,Altena,LOW
+Nederland,Noord-Brabant,West-Brabant,Altena,Radio A-FM,http://a-fmw.radioafm.nl/nieuws/altena/,Omroep,YES,WEEKLY,NO,RTV Altena,ORGANIZATION,JOURNALISM,Altena,LOW
+Nederland,Noord-Brabant,West-Brabant,Altena,Genderen Digitaal,https://genderendigitaal.nl/,Nieuwssite,MIX,WEEKLY,NO,Dorpsraad Genderen,ORGANIZATION,MIX,Genderen,LOW
+Nederland,Noord-Brabant,West-Brabant,Altena,Altena Nieuws,https://www.altenanieuws.nl/,Krant,YES,WEEKLY,YES,Damen Altena Pers b.v.,ORGANIZATION,MIX,Gemeente Altena,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Altena,altena.nieuws.nl,http://altena.nieuws.nl/,Nieuwssite,MIX,DAILY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Gemeente Altena,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Altena,Je komt uit Hank als...,https://www.facebook.com/groups/hanksemensen?locale=nl_NL,Facebookpagina,MIX,DAILY,NO,Hank,INDIVIDUAL,MIX,Hank,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Geertruidenberg,Geertruidenberg.nieuws.nl,https://geertruidenberg.nieuws.nl/category/nieuws/,Nieuwssite,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Geertruidenberg,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Geertruidenberg,Geertruydenberghe,https://geertruydenberghe.nl/kringnieuws-overzicht/,Site stichting / krant,YES,UNSURE,NO,Vereniging Oudheidkundige Kring Geertruydenberghe,ORGANIZATION,SERVICE,Geertruidenberg,LOW
+Nederland,Noord-Brabant,West-Brabant,Geertruidenberg,Gemeente Geertruidenberg,https://www.geertruidenberg.nl/nieuws,Gemeente,YES,WEEKLY,NO,Gemeente Geertruidenberg,ORGANIZATION,SERVICE,Geertruidenberg,LOW
+Nederland,Noord-Brabant,West-Brabant,Rucphen,Rucphen RTV,https://rucphenrtv.nl/,Omroep,YES,DAILY,NO,Rucphen RTV,ORGANIZATION,JOURNALISM,Rucphen,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Rucphen,Gemeente Rucphen,https://www.rucphen.nl/Inwoner/Nieuws,Gemeentesite,YES,WEEKLY,NO,Gemeente Rucphen,ORGANIZATION,SERVICE,Rucphen,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Rucphen,Facebook: Rucphen toen en nu,https://www.facebook.com/rucphentoenennu,Facebookpagina,YES,WEEKLY,NO,Stichting Rucphen toen en nu,ORGANIZATION,JOURNALISM,Rucphen,LOW
+Nederland,Noord-Brabant,West-Brabant,Zundert,Zundert.nieuws.nl,https://zundert.nieuws.nl/category/gemeente/,Nieuwssite,YES,UNSURE,YES,Nort Groep B.V.,ORGANIZATION,MIX,Zundert,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Zundert,Gemeente Zundert,https://www.zundert.nl/nieuws,Gemeentesite,YES,WEEKLY,NO,Gemeente Zundert,ORGANIZATION,SERVICE,Zundert,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Zundert,Corso Zundert,https://corsozundert.nl/nieuws/,Site vereniging,YES,UNSURE,NO,Corso Zundert,ORGANIZATION,MIX,Zundert,LOW
+Nederland,Noord-Brabant,West-Brabant,Zundert,Klein Zundert Dorpsraad,https://www.kleinzundert.info/trends-and-insights,Nieuwssite,YES,UNSURE,NO,Klein Zundert Dorpsraad,ORGANIZATION,JOURNALISM,Zundert,LOW
+Nederland,Noord-Brabant,West-Brabant,Zundert,Facebook: Zundert Breed,https://www.facebook.com/zundertbreed,Facebookpagina,MIX,WEEKLY,NO,-,INDIVIDUAL,MIX,Zundert,LOW
+Nederland,Noord-Brabant,West-Brabant,Gilze-rijen,Gemeente Gilze-Rijen,https://www.gilzerijen.nl/nieuws-van-de-gemeente,Gemeentesite,YES,WEEKLY,NO,Gemeente Gilze-Rijen,ORGANIZATION,SERVICE,Gilze-rijen,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Gilze-rijen,Gilze-en-rijen.nieuws.nl,https://gilze-en-rijen.nieuws.nl/category/gemeente/,Nieuwssite,NO,WEEKLY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Gilze-rijen,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Gilze-rijen,Weekblad Gilze en Rijen,https://www.uitgeverijemdejong.nl/weekbladen/weekblad-gilze-en-rijen/,Krant,YES,WEEKLY,YES,Uitgeverij Em. de Jong,ORGANIZATION,JOURNALISM,Gilze-rijen,LOW
+Nederland,Noord-Brabant,West-Brabant,Gilze-rijen,Hallo Gilze-rijen,https://www.hallogilzerijen.nl/category/nieuws/,Nieuwssite,YES,UNSURE,NO,Hallo Gilze-rijen,ORGANIZATION,SERVICE,Gilze-rijen,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Bernheze,Gemeente Bernheze,https://www.bernheze.org/nieuws/,Gemeentesite,YES,WEEKLY,NO,Gemeente,ORGANIZATION,SERVICE,Bernheze,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Bernheze,Mooi Bernheze,https://www.mooibernheze.nl/,Nieuwssite,MIX,DAILY,YES,Bernheze Media,ORGANIZATION,JOURNALISM,Bernheze,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Bernheze,Bernheze.nieuws.nl,https://bernheze.nieuws.nl/,Nieuwssite,NO,WEEKLY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Bernheze,MEDIUM
+Nederland,Noord-Brabant,West-Brabant,Bernheze,Stichting Natuurtheater de Kersouwe,https://kersouwe.nl/,Site stichting,YES,UNSURE,NO,Stichting Natuurtheater de Kersouwe,ORGANIZATION,SERVICE,Bernheze,LOW
+Nederland,Noord-Brabant,West-Brabant,Bernheze,IVN Natuureducatie,https://www.ivn.nl/nieuws/,Site vereniging,YES,WEEKLY,YES,Vereniging Instituur voor Natuureducatie en duurzaamheid ,ORGANIZATION,MIX,Bernheze,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Midden-Brabant,Kempen TV,#WAARDE!,Omroep,YES,WEEKLY,NO,Stichting Streekomroep de Kempen,ORGANIZATION,MIX,Streek Kempen,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Midden-Brabant,PC55,#WAARDE!,Krant,MIX,WEEKLY,YES,PC55,ORGANIZATION,SERVICE,Bladel & Gemeente Eersel & Gemeente Reusel-De Mierde,HIGH
+Nederland,Noord-Brabant,Midden-Brabant,Midden-Brabant,indebuurt,#WAARDE!,Nieuwssite,MIX,DAILY,YES,DPG Media,ORGANIZATION,MIX,Tilburg e.o.,HIGH
+Nederland,Noord-Brabant,Midden-Brabant,Midden-Brabant,Ons Weekblad,#WAARDE!,Krant,MIX,WEEKLY,YES,Uitgeverij E.M. de Jong,ORGANIZATION,OTHER,,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Omroep Tilburg,https://www.omroeptilburg.nl/,Omroep,YES,DAILY,NO,Omroep Tilburg,ORGANIZATION,JOURNALISM,"Tilburg, Berkel-Enschot, Udenhout, Biezenmortel",HIGH
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,tilburg.nieuws.nl,http://tilburg.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Tilburg,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,tilburgers.nl,https://www.tilburgers.nl/,Nieuwssite,YES,DAILY,NO,tilburgers.nl ,ORGANIZATION,MIX,Tilburg,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Stadsnieuws Tilburg,https://www.tilburgers.nl/tag/stadsnieuws/,Krant,YES,WEEKLY,YES,Uitgeverij Em. de Jong,ORGANIZATION,MIX,Tilburg,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Wijkkrant Noord,https://wijkkrantnoord.nl/,Krant,YES,UNSURE,NO,Wijkkrant Noord,ORGANIZATION,MIX,Tilburg-Noord,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,tilburg.com,https://tilburg.com/,Nieuwssite,YES,DAILY,YES,tilburg.com ,ORGANIZATION,SERVICE,Tilburg,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Univers magazine ,https://universonline.nl/,Nieuwssite,YES,WEEKLY,NO,Tilburg University,ORGANIZATION,MIX,Tilburg studenten,HIGH
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,EyDaily,https://eydaily.nl/,Nieuwssite,YES,DAILY,NO,Fontys Journalistiek,ORGANIZATION,JOURNALISM,Landelijk,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Heel Tilburg In Een Groep,https://www.facebook.com/groups/heeltilburgineengroep/,Facebookpagina,YES,DAILY,NO,heeltilburg.com,INDIVIDUAL,ENTERTAINMENT,Tilburg,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Alle Tilburgse Herinneringen In Een Groep,https://www.facebook.com/groups/alletilburgseherinneringenineengroep,Facebookpagina,YES,DAILY,NO,heeltilburg.com,INDIVIDUAL,ENTERTAINMENT,Tilburg,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Heel Reeshof in een groep!,https://www.facebook.com/groups/822827504402846,Facebookpagina,YES,DAILY,NO,Arnout Stomphorst / Patrick Lemmens,INDIVIDUAL,MIX,Reeshof,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,tilburg.nl,http://tilburg.nl/,Gemeentesite,YES,DAILY,NO,Gemeente Tilburg,ORGANIZATION,SERVICE,Gemeente Tilburg,HIGH
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Dorpsraad Berkel-Enschot,https://dorpsraadberkelenschot.nl/nieuws,Dorpsraad,MIX,MONTHLY,NO,Dorpsraad Berkel-Enschot,ORGANIZATION,SERVICE,Berkel-Enschot,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Udenhout-centraal,https://udenhout-centraal.nl/,Nieuwssite,NO,WEEKLY,YES,Udenhout-Centraal,ORGANIZATION,SERVICE,Udenhout,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,WIJ West,#WAARDE!,Site stichting,YES,WEEKLY,NO,Stichting WIJ West,ORGANIZATION,SERVICE,Tilburg,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Armhoefse Akkers,#WAARDE!,Krant,MIX,UNSURE,NO,Buurtraad Armhoefse Akkers,ORGANIZATION,MIX,"Armhoefse Akkers, Moerenburg, Hoogvenne en Tivoli",MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,De Noordhoek,#WAARDE!,Krant,YES,UNSURE,YES,Uitgeverij E.M. de Jong,ORGANIZATION,JOURNALISM,Noordhoek,HIGH
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Wijkraad Reeshof,#WAARDE!,Facebookpagina,YES,WEEKLY,NO,Wijkraad Reeshof,ORGANIZATION,SERVICE,Reeshof,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Wijkraad Zorgvlied,#WAARDE!,Krant,YES,UNSURE,NO,Wijkraad Zorgvlied,ORGANIZATION,MIX,Zorgvlied,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Theater De Nieuwe Vorst,https://denieuwevorst.nl/nieuws,Theatersite,MIX,WEEKLY,NO,De Nieuwe Vorst (stichting),ORGANIZATION,SERVICE,Tilburg,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Factorium Cultuurmakers,https://www.instagram.com/factoriumcultuurmakers/,Instagram-pagina,MIX,WEEKLY,NO,Stichting Factorium Cultuurmakers,ORGANIZATION,SERVICE,Tilburg,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,013 Poppodium,https://www.instagram.com/013poppodium/,Poppodium,YES,DAILY,YES,Poppodium 013,ORGANIZATION,SERVICE,Tilburg en landelijk,HIGH
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,PaRaDox Tilburg,https://www.instagram.com/paradoxtilburg/,Poppodium,YES,UNSURE,UNSURE,PaRaDox Tilburg,ORGANIZATION,SERVICE,Tilburg en landelijk,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,Tilborgse meense van vruuger,https://www.facebook.com/groups/tilburgsemensenvanvroeger,Facebookpagina,YES,DAILY,NO,Peter Peijnenborg & Ronald van Esch,INDIVIDUAL,ENTERTAINMENT,Tilburg,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Tilburg,LocHal,https://www.facebook.com/lochal013,Facebookpagina,MIX,DAILY,NO,LocHal,ORGANIZATION,SERVICE,Tilburg,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Oosterhout,ORTS,https://orts.nl/,Omroep,YES,DAILY,UNSURE,ORTS,ORGANIZATION,JOURNALISM,Oosterhout,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Oosterhout,Weekblad Oosterhout,https://www.uitgeverijemdejong.nl/weekbladen/weekblad-oosterhout/,Krant,YES,WEEKLY,YES,Uitgeverij Em. de Jong,ORGANIZATION,MIX,Oosterhout,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Oosterhout,oosterhout.nieuws.nl,http://oosterhout.nieuws.nl/,Nieuwssite,NO,WEEKLY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Oosterhout,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Oosterhout,Oosterhout (N.Br.),https://www.facebook.com/groups/691671404185741,Facebookpagina,YES,DAILY,NO,Dre Broeders,INDIVIDUAL,ENTERTAINMENT,Oosterhout,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Oosterhout,Ons Oosterhout,https://www.facebook.com/groups/432439090815401,Facebookpagina,YES,DAILY,NO,Gerda Brands-Nieuwenhuis en Frank Swolfs,INDIVIDUAL,MIX,Oosterhout,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Oosterhout,Gemeente Oosterhout,https://www.oosterhout.nl/nieuws/nieuwsberichten,Gemeentesite,YES,DAILY,NO,Gemeente Oosterhout,ORGANIZATION,SERVICE,Oosterhout,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Oosterhout,Nieuws uit Dorst,https://nieuwsuitdorst.nl/,Nieuwssite / krant,MIX,UNSURE,NO,Stichting Nieuws uit Dorst,ORGANIZATION,MIX,Dorst,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Oosterhout,De Schelleboom,https://www.facebook.com/deschelleboom?locale=nl_NL,Facebookpagina,YES,WEEKLY,NO,Stichting Theater De Schelleboom,ORGANIZATION,ENTERTAINMENT,Oosterhout,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Oosterhout,H19 Centrum voor de kunsten,https://www.facebook.com/h19.oosterhout,Facebookpagina,YES,WEEKLY,NO,Stichting H19 Centrum voor de kunsten,ORGANIZATION,ENTERTAINMENT,Oosterhout,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Oosterhout,Theek 5,https://www.facebook.com/theek5,Facebookpagina,YES,DAILY,NO,Stichting Theek 5,ORGANIZATION,SERVICE,Oosterhout,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Waalwijk,Langstraat media,https://www.langstraatmedia.nl/,Streekomroep,YES,DAILY,NO,Maasstad Omroepstichting Waalwijk,ORGANIZATION,JOURNALISM,"Waalwijk, Loon op Zand, Dongen e.o.",MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Waalwijk,Weekblad Waalwijk,https://www.uitgeverijemdejong.nl/weekbladen/weekblad-waalwijk/,Krant,MIX,WEEKLY,YES,Uitgeverij Em. de Jong,ORGANIZATION,MIX,Waalwijk,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Waalwijk,waalwijk.nieuws.nl,http://waalwijk.nieuws.nl/,Nieuwssite,NO,WEEKLY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Waalwijk,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Waalwijk,Langstraat vandaag,https://www.langstraatvandaag.nl/nieuws,Nieuwssite,MIX,WEEKLY,UNSURE,Langstraat Vandaag,ORGANIZATION,MIX,Waalwijk / Heusden,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Waalwijk,Gemeente Waalwijk,https://www.waalwijk.nl/nieuws,Gemeentesite,YES,WEEKLY,NO,Gemeente Waalwijk,ORGANIZATION,SERVICE,Waalwijk / Heusden,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Heusden,HTR ,https://htrmedia.evtmedia.nl/,Omroep,MIX,DAILY,NO,HTR,ORGANIZATION,MIX,Heusden,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Heusden,Weekblad Heusden,https://www.uitgeverijemdejong.nl/weekbladen/weekblad-heusden/,Krant,MIX,WEEKLY,YES,Uitgeverij Em. de Jong,ORGANIZATION,MIX, Heusden,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Heusden,https://heusden.nieuws.nl/,https://heusden.nieuws.nl/,Nieuwssite,MIX,WEEKLY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Heusden,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Heusden,Gemeente Heusden,https://www.heusden.nl/nieuws/actueel-nieuws/,Gemeentesite,YES,DAILY,NO,Gemeente Heusden,ORGANIZATION,SERVICE,Heusden,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Dongen,Weekblad Dongen,https://www.uitgeverijemdejong.nl/weekbladen/weekblad-dongen/,Krant,MIX,WEEKLY,YES,Uitgeverij Em. de Jong,ORGANIZATION,MIX,Dongen ,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Dongen,dongen.nieuws.nl,http://dongen.nieuws.nl/,Nieuwssite,MIX,DAILY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Dongen,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Dongen,Gemeente Dongen,https://www.dongen.nl/actueel/nieuws,Gemeentesite,MIX,WEEKLY,NO,Gemeente Dongen,ORGANIZATION,SERVICE,Gemeente Dongen,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Loon op Zand,loon-op-zand.nieuws.nl,http://loon-op-zand.nieuws.nl/,Nieuwssite,MIX,WEEKLY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Loon-op-Zand e.o.,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Loon op Zand,Efteling,https://www.efteling.com/nl/blog,Attractiepark,YES,WEEKLY,YES,Efteling,ORGANIZATION,SERVICE,Landelijk,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Loon op Zand,Gemeente Loon op Zand,https://www.loonopzand.nl/nieuwsoverzicht,Gemeentesite,YES,WEEKLY,NO,Gemeente Loon op Zand,ORGANIZATION,SERVICE,Gemeente Loon op Zand,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Bladel,bladel.nieuws.nl,http://bladel.nieuws.nl/,Nieuwssite ,NO,UNSURE,YES,Nort Groep B.V.,ORGANIZATION,MIX,Bladel,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Bladel,Gemeente Bladel,https://www.bladel.nl/nieuws,Gemeentesite,MIX,WEEKLY,NO,Gemeente Bladel,ORGANIZATION,SERVICE,Gemeente Bladel,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Boxtel,boxtel.nieuws.nl,http://boxtel.nieuws.nl/,Nieuwssite,NO,UNSURE,YES,Nort Groep B.V.,ORGANIZATION,MIX,Boxtel,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Boxtel,Gemeente Boxtel,https://www.boxtel.nl/nieuws,Gemeentesite,YES,WEEKLY,NO,Gemeente Boxtel,ORGANIZATION,SERVICE,Gemeente Boxtel,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Boxtel,Brabants Centrum ,https://www.brabantscentrum.nl/,Nieuwssite & krant,YES,DAILY,NO,Stichting Brabants Centrum,ORGANIZATION,JOURNALISM,"Boxtel, Liempde, Lennisheuvel, Gemonde en Esch",LOW
+Nederland,Noord-Brabant,Midden-Brabant,Alphen-Chaam,Gemeente Alphen-Chaam,https://www.alphen-chaam.nl/nieuws-van-de-gemeente,Gemeentesite,YES,WEEKLY,NO,Gemeente Alphen-Chaam,ORGANIZATION,SERVICE,Gemeente Alphen-Chaam,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Baarle-Nassau,KBO Baarle-Nassau,https://www.kbobaarlenassau.nl/,Site vereniging,MIX,UNSURE,UNSURE,KBO; belangenvereniging van senioren,ORGANIZATION,SERVICE,Baarle-Nassau,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Baarle-Nassau,cubag.nieuws.nl,http://cubag.nieuws.nl/,Nieuwssite,MIX,WEEKLY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Baarle-Nassau e.o.,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Baarle-Nassau,Gemeente Baarle-Nassau,https://www.baarle-nassau.nl/nieuws/nieuws-van-de-gemeente,Gemeentesite,YES,WEEKLY,NO,Gemeente Baarle-Nassau,ORGANIZATION,SERVICE,Baarle-Nassau,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Goirle,goirle.nieuws.nl,http://goirle.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Goirle,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Goirle,Goirles Belang,https://www.uitgeverijemdejong.nl/weekbladen/goirles-belang/,Krant,MIX,WEEKLY,YES,Em. de Jong Uitgeverij,ORGANIZATION,MIX,Goirle,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Goirle,Goirles en Rielse dorpsgenoten!,https://www.facebook.com/groups/573203236608702?locale=nl_NL,Facebookpagina,MIX,DAILY,NO,Robin en Maarten Liebregts,INDIVIDUAL,MIX,Goirle en Riel,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Goirle,Gemeente Goirle,https://www.goirle.nl/actueel/nieuws-van-de-gemeente,Gemeentesite,YES,WEEKLY,NO,Gemeente Goirle,ORGANIZATION,SERVICE,Goirle,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Hilvarenbeek,hilvarenbeek.nieuws.nl,http://hilvarenbeek.nieuws.nl/,Nieuwssite ,NO,UNSURE,YES,Nort Groep B.V.,ORGANIZATION,MIX,Hilvarenbeek,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Hilvarenbeek,Gemeente Hilvarenbeek,https://www.hilvarenbeek.nl/nieuws,Gemeentesite,YES,WEEKLY,NO,Gemeente Hilvarenbeek,ORGANIZATION,SERVICE,Gemeente Hilvarenbeek,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Oisterwijk,oisterwijk.nieuws.nl,http://oisterwijk.nieuws.nl/,Nieuwssite ,NO,UNSURE,YES,Nort Groep B.V.,ORGANIZATION,MIX,Oisterwijk,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Oisterwijk,Heel Oisterwijk in een groep! Oisterlikers / Oisterwijkers,https://www.facebook.com/groups/oisterlikers?locale=nl_NL,Facebookpagina,MIX,DAILY,NO,Wijzijnoisterwijk.nl,ORGANIZATION,MIX,Oisterwijk,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Oisterwijk,Gemeente Oisterwiijk,https://www.oisterwijk.nl/nieuws-en-mededelingen,Gemeentesite,YES,WEEKLY,NO,Gemeente Oisterwijk,ORGANIZATION,SERVICE,Oisterwijk,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Oisterwijk,Haaren.nu,https://www.haaren.nu/,Nieuwssite,YES,DAILY,YES,LOVO/Mtv,ORGANIZATION,SERVICE,Haaren,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Oisterwijk,HaarenEEN.nl,https://haareneen.nl/,Wijkplatform,MIX,WEEKLY,YES,HaarenEEN,ORGANIZATION,SERVICE,Haaren,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Oisterwijk,Amare,https://www.amare.nl/nl/,Theatersite,MIX,DAILY,YES,Amare,ORGANIZATION,SERVICE,Haaren,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Oisterwijk,Haren de Krant,https://www.harendekrant.nl/,Nieuwssite en krant,MIX,DAILY,YES,Adfo Movere,ORGANIZATION,JOURNALISM,Haaren,HIGH
+Nederland,Noord-Brabant,Midden-Brabant,Reusel-de Mierden,reusel-de-mierden.nieuws.nl,http://reusel-de-mierden.nieuws.nl/,Nieuwssite ,NO,UNSURE,YES,Nort Groep B.V.,ORGANIZATION,MIX,Reusel-de-Mierden,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Reusel-de Mierden,Gemeente Reusel-de-Mierden,#WAARDE!,Gemeentesite,MIX,WEEKLY,NO,Gemeente Reusel-de-Mierden,ORGANIZATION,SERVICE,Gemeente Reusel-de-Mierden,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Oirschot,Omroep Oirschot,https://een-fm.nl/,Radiozender,YES,DAILY,YES,Stichting Lokale Omroep Oirschot ,ORGANIZATION,SERVICE,Oirschot,LOW
+Nederland,Noord-Brabant,Midden-Brabant,Oirschot,Oirschot Nieuwsblad,https://www.oirschot.nl/oirschots-weekjournaal,Nieuwssite,MIX,WEEKLY,YES,Em. de Jong Uitgeverij,ORGANIZATION,MIX,Oirschot,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Oirschot,nieuws.oirschot.nl,http://nieuws.oirschot.nl/,Nieuwssite ,NO,WEEKLY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Oirschot,MEDIUM
+Nederland,Noord-Brabant,Midden-Brabant,Oirschot,Gemeente Oirschot,https://www.oirschot.nl/nieuws,Gemeentesite,MIX,WEEKLY,NO,Gemeente Oirschot,ORGANIZATION,SERVICE,Gemeente Oirschot,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Noordoost-Brabant,Nieuws.nl,http://nieuws.nl/,Nieuwssite,YES,DAILY,YES,Nort Groep B. V.,ORGANIZATION,JOURNALISM,Brabant,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Noordoost-Brabant,Dtv Nieuws,https://dtvnieuws.nl/nieuws,Omroep,YES,DAILY,YES,Dtv Nieuws / Mfm Brabant,ORGANIZATION,JOURNALISM,"Oss, Bernheze, Den Bosch, Maashorst, Heusden, Vught, Sint-Michielsgestel",HIGH
+Nederland,Noord-Brabant,Noordoost-Brabant,Noordoost-Brabant,Arenalokaal,https://www.arenalokaal.nl/,Nieuwssite en krant,YES,DAILY,YES,Arena Mediacentrum,ORGANIZATION,MIX,"Oss, Landerd en Grave",MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Noordoost-Brabant,Nieuws | Plaza Cultura,https://www.plazacultura.nl/nieuws/nieuws,Site stichting,MIX,WEEKLY,YES,Cultuurbox,ORGANIZATION,SERVICE,"Vught, Sint-Michielgestel",LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Noordoost-Brabant,Het Klaverblad - Vught,https://www.hetklaverblad.nl/,Nieuwssite en krant,YES,WEEKLY,YES,Het Klaverblad,ORGANIZATION,MIX,"Vught, Cromvoirt, Helvoirt, St.-Michielsgestel, Esch, Den Bosch, Vughterbrug",LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Den Bosch,Radio Mexico,https://radiomexico.nl/,Omroep,YES,DAILY,YES,Radio Mexico,ORGANIZATION,MIX,Den Bosch,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Den Bosch,Gemeente 's-Hertogenbosch,https://www.s-hertogenbosch.nl/,Gemeentesite ,YES,WEEKLY,NO,Gemeente S-Hertogenbosch,ORGANIZATION,SERVICE,Den Bosch,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Den Bosch,Bosschedagblad.nl,https://www.bosschedagblad.nl/,Nieuwssite,YES,WEEKLY,YES,Xyoto ,ORGANIZATION,MIX,Den Bosch,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Den Bosch,Bastion Oranje,https://www.bastionoranje.nl/,Nieuwssite,YES,UNSURE,YES,Paul Kriele,INDIVIDUAL,JOURNALISM,Den Bosch,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Den Bosch,De Bossche Omroep,https://www.kliknieuwsdenbosch.nl/,Nieuwssite en krant,YES,DAILY,YES,Talvi ,ORGANIZATION,JOURNALISM,Den Bosch,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Den Bosch,De Stempel van Empel,https://destempelvanempel.nl/,Nieuwssite en blad,YES,UNSURE,NO,Wijk Empel,ORGANIZATION,SERVICE,"Empel, Gewande en Krommenhoek",MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Den Bosch,Nieuws Dorpsraad Nuland,https://www.dorpsraadnuland.nl/nieuws/,Wijkplatform,MIX,UNSURE,NO,Dorpsraad Nuland,ORGANIZATION,SERVICE,Nuland,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Den Bosch,Nieuws - Wijk Maliskamp,https://www.wijkmaliskamp.nl/nieuws/,Wijkplatform,YES,UNSURE,NO,Wijk Maliskamp,ORGANIZATION,MIX,Maliskamp,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Den Bosch,Huis73,https://www.huis73.nl/,Bibliotheek,YES,UNSURE,YES,Huis73,ORGANIZATION,MIX,Den Bosch,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Den Bosch,Wijkraad Molenhoek,https://www.wijkmolenhoek.nl/,Wijkplatform,YES,UNSURE,NO,Wijk Molenhoek,ORGANIZATION,MIX,Molenhoek,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Rosmalen,Lokaalnieuwsrosmalen.nl,https://lokaalnieuwsrosmalen.nl/,Nieuwssite,NO,UNSURE,YES,Lokaal Nieuws Rosmalen,ORGANIZATION,MIX,Rosmalen,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Rosmalen,Thuisinhetnieuws.nl,http://www.thuisinhetnieuws.nl/,Nieuwssite en magazine,MIX,WEEKLY,YES,Thuis in het Nieuws,ORGANIZATION,MIX,"Maasland, Meierij",MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Rosmalen,KrantHintham,https://debiechten.nl/wijkkrant/,Krant,MIX,UNSURE,UNSURE,De Biechten,ORGANIZATION,SERVICE,Hintham,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Rosmalen,KrantdeGrooteWielen,https://wijkcentrumwindkracht5.nl/wijkkrant/,Krant,MIX,UNSURE,NO,Wijkcentrum Windkracht5,ORGANIZATION,MIX,De Groote Wielen,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Rosmalen,Wijkraad Molenhoek,https://www.wijkmolenhoek.nl/,Nieuwssite,YES,WEEKLY,NO,Wijkraad Molenhoek,ORGANIZATION,MIX,Molenhoek,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Rosmalen,De Rosbode,https://www.derosbode.nl/,Nieuwssite en krant,YES,WEEKLY,YES,Jan en Jan Media,ORGANIZATION,MIX,Rosmalen,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Sint-Michielgestel,Krant De Brug,https://www.weekblad-debrug.nl/,Nieuwssite en krant,YES,DAILY,YES,Jan en Jan Media,ORGANIZATION,JOURNALISM,Sint-Michielsgestel,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Sint-Michielgestel,Gemeente Sint-Michielsgestel,https://www.sint-michielsgestel.nl/,Gemeentesite,YES,DAILY,NO,Gemeente Sint-Michielgestel,ORGANIZATION,SERVICE,Sint-Michielgestel,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Sint-Michielgestel,"Sint-Michiels, Brugge",https://www.facebook.com/groups/SintMichiels,Facebookpagina,MIX,WEEKLY,NO,Karel D'hont,ORGANIZATION,MIX,Sint-Michielgestel en Brugge,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Sint-Michielgestel,Lokaal7,https://www.lokaal7.nl/,Omroep,NO,WEEKLY,YES,Lokaal 7,ORGANIZATION,MIX,Sint-Michielgestel,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Oss,Nieuws - TOP Oss,https://toposs.nl/nieuws/,Nieuwssite,YES,WEEKLY,YES,TOP Oss,ORGANIZATION,JOURNALISM,Oss,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Oss,Krant Ussen - Wijkraad Oss Noord-West,https://wijkraadossnoordwest.nl/?page_id=828,Krant,YES,UNSURE,NO,Wijkraad Oss ,ORGANIZATION,SERVICE,Ussen,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Oss,Rucreant digitaal,https://www.wijkderuwaard.nl/rucreant/digitaal,Krant,YES,UNSURE,NO,Wijk de Ruwaard,ORGANIZATION,MIX,Ruwaard,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Oss,Nieuws - Schadewijk Oss,https://schadewijk-oss.nl/nieuws,Site stichting,YES,WEEKLY,NO,Wijkstichting Schadewijk,ORGANIZATION,MIX,Schadewijk,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Oss,De Lievekamp,https://www.lievekamp.nl/,Theatersite,MIX,DAILY,YES,De Lievekamp,ORGANIZATION,MIX,Oss,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Oss,Kliknieuws Oss,https://www.kliknieuwsoss.nl/nieuws/kunst-en-cultuur/214986/geen-finaleplaats-voor-penny-weijenburg-en-berry-reijnen?fbclid=IwAR3kViw280Ku7M1EviAsLaqkADXOxgG4mlUa2L_ogjZtsMKk5N5DFW4qpDc,Nieuwssite en krant,YES,DAILY,YES,Talvi,ORGANIZATION,JOURNALISM,Oss,HIGH
+Nederland,Noord-Brabant,Noordoost-Brabant,Oss,Dat is Oss,https://www.facebook.com/datisoss,Facebookpagina,MIX,WEEKLY,YES,DatisOss,ORGANIZATION,MIX,Oss,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Oss,TrefhetinOss,https://www.facebook.com/TrefhetinOss,Facebookpagina,MIX,WEEKLY,NO,"Gemeente Oss, Centrummanagement Oss, stichting Maasmeanders, Maashorst ondernemers en Bibliotheek Oss",ORGANIZATION,SERVICE,Oss,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Oss,Nieuwsberichten - Gemeente Oss,https://www.oss.nl/inwoners/actueel/nieuwsberichten.htm,Gemeentesite,YES,WEEKLY,NO,Gemeente Oss,ORGANIZATION,MIX,Oss,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Maashorst,Stadskrant Uden,https://www.kliknieuwsuden.nl/,Krant,YES,DAILY,YES,Talvi Media,ORGANIZATION,MIX,Uden,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Maashorst,DTV Uden,https://dtvnieuws.nl/uden,Omroep,YES,UNSURE,YES,DTV Media B.V.,ORGANIZATION,JOURNALISM,Uden,HIGH
+Nederland,Noord-Brabant,Noordoost-Brabant,Maashorst,Uden Nieuws.nl,https://uden.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort groep B.V.,ORGANIZATION,MIX,Uden,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Maashorst,Uden Nieuws - het laatste gemeente Uden nieuws verzameld uit 1000+ bronnen bij Uden Headliner udennieuws,https://uden.headliner.nl/,Nieuwssite,NO,DAILY,YES,Headliner,ORGANIZATION,JOURNALISM,Uden ,HIGH
+Nederland,Noord-Brabant,Noordoost-Brabant,Maashorst,Uden Laat Zich Horen | Facebookroups/766562990131985,https://www.facebook.com/groups/766562990131985,Facebookpagina,MIX,WEEKLY,NO,William van Wessel,INDIVIDUAL,MIX,Uden,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Maashorst,Leuke uitjes Uden/Veghel,https://www.facebook.com/groups/821972034484400,Facebookpagina,NO,UNSURE,NO,Perry Witlox en Wendy Veuger,ORGANIZATION,MIX,Uden,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Maashorst,Maashorst - Nieuws uit gemeente Maashorst,https://maashorst.nieuws.nl/,Nieuwssite,YES,DAILY,YES,Nort Groep B. V.,ORGANIZATION,JOURNALISM,Maashorst,HIGH
+Nederland,Noord-Brabant,Noordoost-Brabant,Maashorst,Explore Maashorst,https://www.exploremaashorst.nl/uitagenda,Cultuursite,MIX,WEEKLY,YES,Gemeente Maashorst,ORGANIZATION,SERVICE,Maashorst,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Maashorst,Nieuws | Gemeente Maashorst,https://www.gemeentemaashorst.nl/nieuws/,Gemeentesite,YES,DAILY,NO,Gemeente Maashorst,ORGANIZATION,SERVICE,Maashorst,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Landerd,Je komt uit Schaijk als.... | Facebook,https://www.facebook.com/groups/1415793478647455,Facebookpagina,MIX,DAILY,NO,Rob van Boekel,ORGANIZATION,MIX,Schaijk,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Landerd,Verhalen - Natuurlijk Schaijk,https://natuurlijkschaijk.nl/verhalen/,Wijkplatform,MIX,UNSURE,UNSURE,Natuurlijk Schaijk,ORGANIZATION,SERVICE,Landerd,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Landerd,Bestemmingsplannen,https://www.planviewer.nl/bestemmingsplannen/Landerd?c=20231203221055,Nieuwssite,YES,UNSURE,YES,Plan Viewer,ORGANIZATION,SERVICE,Landerd,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Landerd,112 meldingen en 112 nieuws in Landerd - Oozo.nl,https://www.oozo.nl/hulpdiensten/landerd,Nieuwssite,YES,WEEKLY,YES,Oozo,ORGANIZATION,SERVICE,Schaijk,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Son en Breugel,Nieuws | Gemeente Son en Breugel,https://www.sonenbreugel.nl/nieuws,Gemeentesite,YES,WEEKLY,NO,Gemeente Son en Breugel,ORGANIZATION,SERVICE,Son en Breugel,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Son en Breugel,Ons Son en Breugel/,https://onssonenbreugel.nl/,Nieuwssite,YES,DAILY,YES,Ons,ORGANIZATION,JOURNALISM,Son en Breugel,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Son en Breugel,Son en Breugel verbindt,https://www.sonenbreugelverbindt.nl/web/group-254857/news,Nieuwssite,NO,WEEKLY,NO,Stichting Sonenbreugelverbindt,ORGANIZATION,MIX,Son en Breugel,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Son en Breugel,MooiSonenBreugel.nl,https://www.mooisonenbreugel.nl/,Nieuwssite en krant,YES,DAILY,YES,De mooi Son en Breugel,ORGANIZATION,JOURNALISM,Son en Breugel,HIGH
+Nederland,Noord-Brabant,Noordoost-Brabant,Son en Breugel,Agenda DOMMELHUIS - bieb  dorpshuis  theater,https://www.dommelhuis.nl/agenda,Cultuursite,MIX,DAILY,YES,Dommelhuis,ORGANIZATION,SERVICE,Son en Breugel,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Son en Breugel,Son en Breugel,https://son-en-breugel.nieuws.nl/,Nieuwssite,YES,DAILY,YES,Nort Groep B. V.,ORGANIZATION,MIX,Son en Breugel,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Deurne,DMG Deurne,https://dmgdeurne.nl/,Nieuwssite,YES,DAILY,YES,Deurne Media Groep,ORGANIZATION,JOURNALISM,Deurne,HIGH
+Nederland,Noord-Brabant,Noordoost-Brabant,Deurne,Krant voor Deurne,https://www.weekbladvoordeurne.nl/,Nieuwssite en krant,YES,WEEKLY,YES,DAS Media Centrum,ORGANIZATION,JOURNALISM,Deurne,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Deurne,Nieuws overzicht - Wijk de Heiakker - Deurne,https://wijkdeheiakker.nl/nieuws,Wijkplatform,YES,DAILY,NO,Wijk de Heiakker,ORGANIZATION,SERVICE,Deurne,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Deurne,Nieuws | Gemeente Deurne,https://www.deurne.nl/nieuws,Gemeentesite,YES,WEEKLY,NO,Gemeente Deurne,ORGANIZATION,SERVICE,Deurne,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Deurne,Walsberg - Onder Ons,https://walsberg.nl/onder-ons,Krant,MIX,UNSURE,YES,Walsberg,ORGANIZATION,SERVICE,Deurne (Walsberg),LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Deurne,Programma - Cultuurcentrum Deurne,https://www.ccdeurne.nl/programma/,Theatersite ,YES,WEEKLY,YES,Cultuur Centrum Deurne,ORGANIZATION,SERVICE,Deurne,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Land van Cuijk,Nieuws | Gemeente Land van Cuijk,https://www.gemeentelandvancuijk.nl/nieuws/,Gemeentesite,YES,UNSURE,NO,Gemeente Land van Cuijk,ORGANIZATION,JOURNALISM,Land van Cuijk,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Land van Cuijk,Nieuws in het Land van Cuijk,https://www.landvancuijk.nl/nieuws/,Nieuwssite,MIX,WEEKLY,YES,Land van Cuijk,ORGANIZATION,MIX,Land van Cuijk,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Land van Cuijk,Omroep Land van Cuijk),https://www.omroeplvc.nl/nieuws/24-11-2023-verenigingen-verbreken-miljoenenrecord-met-de-grote-clubactie-ook-in-sint-anthonis-zetten-leden-zich-massaal-in-voor-hun-vereniging-/,Omroep,YES,WEEKLY,YES,Omroep LVK,ORGANIZATION,JOURNALISM,Land van Cuijk,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Land van Cuijk,Schouwburg Cuijk,https://schouwburgcuijk.nl/nieuws,Theatersite,YES,WEEKLY,YES,Schouwburg Cuijk,ORGANIZATION,JOURNALISM,Land van Cuijk,HIGH
+Nederland,Noord-Brabant,Noordoost-Brabant,Grave,Bommeltje.nl,http://bommeltje.nl/,Blogger,MIX,UNSURE,UNSURE,Peter van Bommel,INDIVIDUAL,MIX,Grave,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Grave,Grave in beeld | Facebook,https://www.facebook.com/groups/graveinbeeld/,Facebookpagina,YES,DAILY,NO,"Moni Arts, Risa Vruggink en Jan Hoekstra ",ORGANIZATION,MIX,Grave,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Grave,Grave... ons Stadje aan de Maas,https://stadjeaandemaas.nl/,NIeuwssite,MIX,DAILY,YES,Land van Cuijk,ORGANIZATION,SERVICE,Grave,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Grave,Agenda van de maand december - Beleef Historisch Grave,https://www.beleefhistorischgrave.nl/agenda/,NIeuwssite,MIX,WEEKLY,YES,Grave Toerisme,ORGANIZATION,SERVICE,"Grave, Velp",LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Grave,"DeGraeF, De Graafse Krant - LVCNieuws",https://www.lvcnieuws.nl/kranten/degraef/,Krant,MIX,UNSURE,YES,LVC Nieuws,ORGANIZATION,SERVICE,Grave,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Grave,Grave Nieuws,https://grave.nieuws.nl/,NIeuwssite,NO,WEEKLY,YES,Noortgroep B.V.,ORGANIZATION,JOURNALISM,Grave,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Mill en Sint Hubert,inMill.nl,https://www.inmill.nl/,Nieuwssite en krant,MIX,DAILY,YES,De Neije Krant,ORGANIZATION,MIX,"Mill, Sint Hubert en Langeboom",MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Mill en Sint Hubert,StHubert.Nu,https://www.sthubert.nu/,Nieuwssite,NO,DAILY,YES,Stichting Sint Hubert,ORGANIZATION,JOURNALISM,Sint Hubert en Mill,HIGH
+Nederland,Noord-Brabant,Noordoost-Brabant,Mill en Sint Hubert,SCM ut Germelaand,https://germelaand.nl/,Nieuwssite,YES,UNSURE,YES,Germelaand,ORGANIZATION,SERVICE,Mill,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Boxmeer,Land van Cuijk,https://land-van-cuijk.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B. V.,ORGANIZATION,JOURNALISM,Boxmeer,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Boxmeer,Theateragenda - De Weijer,https://www.deweijer.nl/agenda,Theatersite,NO,DAILY,YES,De Weijer,ORGANIZATION,SERVICE,Boxmeer,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Boxmeer,Nieuws uit Boxmeer - Actualiteiten en berichten op een rijtje,https://www.bezoekboxmeer.nl/nieuws/,Nieuwssite,NO,WEEKLY,YES,Maatwerk Media,ORGANIZATION,MIX,Boxmeer,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Boxmeer,"DeBoK, De Boxmeerse Krant - LVCNieuws",https://www.lvcnieuws.nl/kranten/debok/,Krant,MIX,UNSURE,YES,LVC Nieuws,ORGANIZATION,SERVICE,Boxmeer,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Boekel,Boekel,https://boekel.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B. V.,ORGANIZATION,JOURNALISM,Boekel,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Boekel,inBoekel,https://www.inboekel.nl/,Nieuwssite,MIX,WEEKLY,YES,InBoekel,ORGANIZATION,SERVICE,Boekel,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Boekel,Nieuws - Gemeente Boekel,https://www.boekel.nl/in-de-gemeente/nieuws/,Gemeentesite,YES,WEEKLY,NO,Gemeente Boekel,ORGANIZATION,SERVICE,Boekel,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Boekel,lokale omroep Blok Boekel,https://www.bloktv.nl/,Omroep,YES,WEEKLY,YES,Blok TV,ORGANIZATION,JOURNALISM,Boekel,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Sint Anthonis,Nieuws uit Sint Anthonis - Actualiteiten en berichten op een rijtje,https://www.bezoeksintanthonis.nl/nieuws/,Gemeentesite,MIX,WEEKLY,YES,Gemeente Sint Anthonis,ORGANIZATION,SERVICE,Sint Anthonis,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Sint Anthonis,Sint Anthonis,https://sint-anthonis.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,JOURNALISM,Sint Anthonis,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Sint Anthonis,Oelbroeck Sint Anthonis,https://www.oelbroeck.nl/nieuws/,Site stichting,MIX,UNSURE,YES,Oelbroeck,ORGANIZATION,SERVICE,Sint Anthonis,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Sint Anthonis,Nieuws - Oelbroeck Sint Anthonis,https://www.oelbroeck.nl/nieuws/,Wijkplatform,MIX,DAILY,NO,Oelbroeck,ORGANIZATION,SERVICE,Oelbroeck,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Sint Anthonis,Berichten op SamenSintAnthonis.nl,https://samensintanthonis.nl/berichten,Nieuwssite,MIX,WEEKLY,YES,Land van Cuijk,ORGANIZATION,SERVICE,Sint Anthonis,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Vught,Nieuws | Gemeente Vughtnieuws,https://vught.nl/nieuws,Gemeentesite,YES,WEEKLY,NO,Gemeente Vught,ORGANIZATION,SERVICE,Vught,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Vught,Vught - Nieuws,https://vught.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B. V.,ORGANIZATION,JOURNALISM,Vught,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Vught,NOVO3,https://www.novo3.nl/,Omroep,MIX,DAILY,YES,NOVO3,ORGANIZATION,JOURNALISM,"Vught, Helvoirt, Cromvoirt",MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Vught,"Vught nieuws, links en rechts",https://www.facebook.com/groups/663279414120788,Facebookpagina,MIX,WEEKLY,NO,"Tinka Kroon, Acilegna Sri",ORGANIZATION,MIX,Vught,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Vught,Vught.nu,https://www.vught.nu/,Nieuwssite,NO,DAILY,YES,Helvoirtnet,ORGANIZATION,SERVICE,Vught,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Vught,"Uitagenda van Vught, Helvoirt en Cromvoirt",https://www.visitvught.nl/agenda,Gemeentesite,MIX,DAILY,NO,Visit Vught,ORGANIZATION,SERVICE,"Vught, Helvoirt, Cromvoirt",LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Vught,Programma - Vught,https://theaterdespeeldoos.nl/programma/,Theatersite,YES,DAILY,YES,Theater Speeldoos,ORGANIZATION,SERVICE,Vught,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Laarbeek,Gemeente Laarbeek,https://www.laarbeek.nl/,Gemeentesite,YES,WEEKLY,NO,Gemeente Laarbeek,ORGANIZATION,SERVICE,Laarbeek,LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Laarbeek,Laarbeek,https://laarbeek.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B. V.,ORGANIZATION,JOURNALISM,Laarbeek,MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Laarbeek,MooiLaarbeek,https://www.mooilaarbeek.nl/,Nieuwssite,YES,DAILY,YES,GoedeMorgen Media,ORGANIZATION,JOURNALISM,Laarbeek,HIGH
+Nederland,Noord-Brabant,Noordoost-Brabant,Laarbeek,Nieuws Omroep Peelrand,https://omroeppeelrand.nl/category/nieuws/,Omroep,YES,DAILY,YES,Brink Multimedia,ORGANIZATION,JOURNALISM,"Laarbeek, Boekel",MEDIUM
+Nederland,Noord-Brabant,Noordoost-Brabant,Laarbeek,Land van Peel,https://www.landvandepeel.nl/nl/agenda/200621205/historische-filmcyclus-helmond-2023,Nieuwssite,MIX,DAILY,YES,Land van de Peel,ORGANIZATION,SERVICE,"Laarbeek, Helmond",LOW
+Nederland,Noord-Brabant,Noordoost-Brabant,Laarbeek,Nieuws - Laarbeekse Boeren,https://www.laarbeekseboeren.nl/nieuws/,Nieuwssite,YES,WEEKLY,YES,Laarbeekse Boeren,ORGANIZATION,SERVICE,Laarbeek,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Ed.nl,http://ed.nl/,Regiodagblad,YES,DAILY,YES,DPG Media,ORGANIZATION,JOURNALISM,Eindhoven,HIGH
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Studio040.nl,http://studio040.nl/,Nieuwssite en krant,YES,DAILY,YES,Uitgeverij Van der Heijden,ORGANIZATION,MIX,"Eindhoven, Geldrop-Mierlo, Veldhoven, Nuenen, Waalre ",HIGH
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Dagblad Eindhoven,https://www.dagbladeindhoven.nl/,Nieuwssite en krant,MIX,DAILY,YES,XYTO Media BV,ORGANIZATION,JOURNALISM,Eindhoven,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Groot Eindhoven,https://www.grooteindhoven.nl/,Nieuwssite en krant,YES,DAILY,YES,Em de Jong,ORGANIZATION,JOURNALISM,Eindhoven,HIGH
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Krant 't Brierke,#WAARDE!,Krant,YES,UNSURE,NO,Wijkraad de Achtse Barrier,ORGANIZATION,MIX,Wijk Achtse Barrier,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Buurtkrant De Witte,https://www.hetwittedorp.nl/buurtkrant-de-witte,Krant,YES,UNSURE,NO,Buurtkrant De Witte,ORGANIZATION,JOURNALISM,Wijk Het Witte Dorp,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,De Stratummer,https://www.stratummer.nl/,Magazine,YES,UNSURE,NO,Het Witte Dorp,ORGANIZATION,JOURNALISM,Centrum Eindhoven & Zuidoost Eindhoven,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Wijkblad 't Hofke,https://rondhethofke.nl/,Krant,YES,UNSURE,NO,Drukkerij Allcolor,ORGANIZATION,MIX,Wijk Tongelre,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,De Effenaar Spaces,https://www.effenaar.nl/spaces,Poppodium,YES,WEEKLY,UNSURE,De Effenaar,ORGANIZATION,MIX,Eindhoven,HIGH
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Eindhoven24,https://eindhoven24.nl/nl/home/artikel/85763/Archeologen-ontdekken-middeleeuwse-knuppelweg,Nieuwssite,YES,DAILY,YES,Eindhoven24,ORGANIZATION,MIX,Eindhoven,HIGH
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,ThuisIn,https://www.thuisin.online/,Nieuwssite,YES,WEEKLY,YES,Media Advies Eindhoven,ORGANIZATION,SERVICE,Eindhoven,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Eindhoven.nl,http://eindhoven.nl/,Gemeentesite,YES,WEEKLY,NO,Gemeente Eindhoven,ORGANIZATION,MIX,Eindhoven,HIGH
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Bergen Bulletin,https://www.stichtingdebergen.nl/bergen-bulletin/,Krant,YES,UNSURE,UNSURE,Printplan,ORGANIZATION,MIX,Wijk De Bergen,HIGH
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Cursor Tu/e,https://www.cursor.tue.nl/,Nieuwssite,YES,DAILY,NO,College van Bestuur van de Technische Universiteit Eindhoven,ORGANIZATION,JOURNALISM,Eindhoven,HIGH
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Parktheater,https://www.parktheater.nl/en/,Theater,YES,WEEKLY,YES,Parktheater Eindhoven,ORGANIZATION,SERVICE,Eindhoven,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Muziekgebouw ,https://www.muziekgebouweindhoven.nl/nl/,Theater,YES,WEEKLY,YES,Muziekgebouw EIndhoven,ORGANIZATION,SERVICE,Eindhoven,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Eindhoven24.nl,http://eindhoven24.nl/,Nieuwssite,YES,DAILY,YES,Punt24,ORGANIZATION,JOURNALISM,Eindhoven,HIGH
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Expats Eindhoven,https://www.facebook.com/groups/expats.eindhoven.nl,Facebookpagina,YES,DAILY,NO,Docent Philippe,INDIVIDUAL,SERVICE,Eindhoven,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,EHVXL (Facebook),https://www.facebook.com/EHVXL,Facebookpagina,YES,WEEKLY,NO,EHV XL,ORGANIZATION,SERVICE,Eindhoven,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,EHV XL,https://ehvxl.nl/nieuws/,Vereniging,YES,WEEKLY,NO,EHV XL,ORGANIZATION,MIX,Eindhoven,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Buurtkrant Woensel-West (Facebook),https://www.facebook.com/groups/110779925987037,Facebookpagina,YES,WEEKLY,NO,Buurtkrant Woensel-West,ORGANIZATION,SERVICE,Eindhoven,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Student Eindhoven,https://www.facebook.com/groups/Studenteindhoven,Facebookpagina,YES,DAILY,NO,Heather Donaldson,INDIVIDUAL,SERVICE,Eindhoven,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eindhoven,Heel Eindhoven in een groep,https://www.facebook.com/groups/480866798710537/,Facebookpagina,MIX,DAILY,NO,Hans Houbraken,INDIVIDUAL,MIX,Eindhoven,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Ditishelmond.nl,http://ditishelmond.nl/,Nieuwssite,YES,DAILY,NO,Ditishelmond (ANBI),ORGANIZATION,MIX,Helmond,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Helmonds Dagblad,https://www.helmondsdagblad.nl/,Nieuwssite,NO,DAILY,YES,XYTO Media,ORGANIZATION,JOURNALISM,Helmond,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Helmond.nl,http://helmond.nl/,Gemeentesite,YES,DAILY,NO,Gemeente Helmond,ORGANIZATION,SERVICE,Helmond,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Museum Helmond,https://museumhelmond.nl/,Museum,YES,WEEKLY,NO,Museum Helmond,ORGANIZATION,SERVICE,Helmond,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Wijkblad De Corridor,https://ditishelmond.nl/bedrijven/de-corridor-wijkblad/,Krant,YES,UNSURE,NO,Van Helvoort Grafisch Bedrijf BV,ORGANIZATION,MIX,Wijk De Corridor,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Krant WestWijzer,https://wijkhuiswestwijzer.nl/,Krant,YES,UNSURE,NO,Wijkhuis Westwijzer,ORGANIZATION,SERVICE,Helmond-West,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Wijkraad Brouwhuis,https://www.wijkraadbrouwhuis.nl/,Krant,YES,UNSURE,NO,Wijkraad Brouwhuis,ORGANIZATION,MIX,Wijk Brouwhuis,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Weekkrant De Loop,https://www.helmondnu.nl/,Krant,YES,WEEKLY,NO,Adcommunicatie,ORGANIZATION,MIX,Helmond,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,De Weblog van Helmond,https://www.deweblogvanhelmond.nl/amp/nieuw-helmonds-nieuws/,Nieuwssite,MIX,DAILY,NO,Onbekende eigenaar,INDIVIDUAL,JOURNALISM,Helmond,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Helmond-nieuws.nl,http://helmond-nieuws.nl/,Nieuwssite,MIX,DAILY,YES,Helmond Nieuws,ORGANIZATION,JOURNALISM,Helmond,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Helmond Sport,https://www.helmondsport.nl/nieuws,Sportclub,YES,WEEKLY,YES,Helmond Sport,ORGANIZATION,MIX,Helmond,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,In&Uit Helmond,https://www.inenuithelmond.nl/,Krant,YES,UNSURE,YES,Tavli Media,ORGANIZATION,MIX,Helmond,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Wijkagenten Helmond Binnenstad,https://www.instagram.com/wijkagenten_helmond_binnenstad/,Instagram-pagina,YES,WEEKLY,NO,Politie Helmond,ORGANIZATION,MIX,Helmond,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,De Helmondse Weblog,https://www.deweblogvanhelmond.nl/,Blogger,YES,DAILY,NO,Eigenaar anoniem,INDIVIDUAL,JOURNALISM,Helmond,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Helmond - Dit is onze stad,https://www.facebook.com/groups/helmond.ditisonzestad,Facebookpagina,YES,DAILY,NO,Toon van de Wijk,INDIVIDUAL,MIX,Helmond,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Theater Het Speelhuis,https://theaterspeelhuis.nl/actueel/wonka-podia-brengt-jeugdtheater-naar-tientallen-schoolpleinen-in-eindhoven-en-regio,Theater,YES,WEEKLY,NO,Theater Het Speelhuis,ORGANIZATION,SERVICE,Helmond,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Helmond,Helmond-Noord-Ditisonzewijk,https://www.facebook.com/groups/helmondnoord.ditisonzewijk,Facebookpagina,MIX,WEEKLY,NO,Toon van de Wijk,INDIVIDUAL,MIX,Helmond-Noord,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Veldhoven,Omroep Veldhoven,https://omroepveldhoven.nl/,Omroep,YES,DAILY,YES,Omroep Veldhoven,ORGANIZATION,MIX,Veldhoven,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Veldhoven,Veldhoven.nl,http://veldhoven.nl/,Gemeentesite,YES,DAILY,NO,Gemeente Veldhoven,ORGANIZATION,MIX,Veldhoven,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Veldhoven,Veldhovens Krant,https://www.veldhovensweekblad.nl/,Krant,YES,WEEKLY,YES,Gemeente Veldhoven,ORGANIZATION,MIX,Veldhoven,HIGH
+Nederland,Noord-Brabant,Zuidoost-Brabant,Veldhoven,Veldhoven.nieuws.nl,http://veldhoven.nieuws.nl/,Nieuwssite,YES,DAILY,YES,Nort Groep B.V.,ORGANIZATION,MIX,Veldhoven,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Veldhoven,Bibliotheek Veldhoven,https://www.bibliotheekveldhoven.nl/actueel/nieuws.html,Bibliotheek,YES,UNSURE,NO,De Bibliotheek Midden-Brabant,ORGANIZATION,JOURNALISM,Veldhoven,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Veldhoven,Maxima Veldhoven ,https://www.mmc.nl/nieuws/,Ziekenhuis ,YES,WEEKLY,NO,Maxima Ziekenhuis Veldhoven,ORGANIZATION,MIX,Veldhoven,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Veldhoven,Voedselbank Veldhoven,https://www.voedselbankveldhoven.nl/nieuws/,Voedselbank,YES,UNSURE,NO,Voedselbank Veldhoven,ORGANIZATION,MIX,Veldhoven,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Veldhoven,Oerle Info,https://oerle.info/News.aspx,Nieuwssite,YES,UNSURE,UNSURE,Onbekende eigenaar,ORGANIZATION,JOURNALISM,Oerle,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Veldhoven,Rechterhanden,https://rechterhanden.online/blog/,Culturele stichting,YES,WEEKLY,NO,Rechter Handen,ORGANIZATION,MIX,Veldhoven,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,Stadskrant Veghel,https://www.kliknieuwsveghel.nl/,Krant,YES,DAILY,YES,Tavli Media,ORGANIZATION,MIX,Veghel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,Omroep Meierij,https://www.omroepmeierij.nl/omroepmeierij/nieuws,Omroep,YES,DAILY,NO,Stichting Omroep Meierijstad,ORGANIZATION,JOURNALISM,Meierijstad,HIGH
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,Omroep Schijndel,https://www.tvschijndel.nl/,Omroep,MIX,DAILY,NO,Stichting Omroep Schijndel,ORGANIZATION,JOURNALISM,Meierijstad  ,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,Mooi Schijndel,https://www.mooischijndel.nl/,Krant,YES,DAILY,UNSURE,DeMooiKrant BV,ORGANIZATION,MIX,Schijndel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,Leefgoed Veghel,https://leefgoedveghel.nl/nieuws/,Website ZorgKwartier Veghel,YES,UNSURE,NO,Zorgkwartier Veghel,ORGANIZATION,MIX,Veghel,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,Kloosterkwartier Veghel,https://www.kloosterkwartierveghel.nl/,Website wijk,YES,UNSURE,NO,Kloosterkwartier Veghel,ORGANIZATION,SERVICE,Veghel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,Cultuurhaven Veghel,https://cultuurhavenveghel.nl/nieuws,Site stichting,YES,UNSURE,NO,Stichting Cultuurhaven,ORGANIZATION,SERVICE,Veghel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,De MooiRooiKrant,https://www.mooirooi.nl/,Krant,YES,DAILY,YES,DeMooiKrant BV,ORGANIZATION,SERVICE,Sint-Oedenrode,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,De Blauwe Kei,https://www.blauwekei.nl/,Theater,YES,WEEKLY,YES,Theater de Blauwe Kei,ORGANIZATION,MIX,Veghel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,Wijkraad Hoevenbraak-Hulzebraak ,https://wijkraadhh.nl/nieuws,Wijkraad,NO,UNSURE,NO,KBO Schijndel,ORGANIZATION,MIX,Schijndel,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,Dorpsraad Wijbosch,https://www.wijbosch.com/,Nieuwssite,YES,WEEKLY,NO,Dorpsraad Wijbosch,ORGANIZATION,SERVICE,Wijbosch,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,Dorpsraad Boskant,https://dorpsraadboskant.nl/nieuws,Nieuwssite,YES,UNSURE,NO,Dorpsraad Boskant,ORGANIZATION,MIX,Boskant,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,Dorpsraad Boerdonk,https://www.boerdonk.nl/,Nieuwssite,YES,WEEKLY,NO,Dorpsraad Boerdonk,ORGANIZATION,MIX,Boerdonk,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Meierijstad,Wijkraad Zuidelijk Veghel,https://www.wijkraadzuidelijkveghel.nl/zuidelijk-veghel,Nieuwssite,YES,UNSURE,NO,Wijkraad Zuidelijk Veghel,ORGANIZATION,MIX,Veghel-Zuid,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Gemert-Bakel,Gemeente Gemert-Bakel,https://www.gemert-bakel.nl/actueel-nieuws,Gemeentesite,YES,WEEKLY,NO,Gemeente Gemert-Bakel,ORGANIZATION,SERVICE,Gemert-Bakel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Gemert-Bakel,Omroep Centraal TV,https://omroepcentraal.tv/over-ons/,Omroep,YES,DAILY,NO,Omroep Centraal TV,ORGANIZATION,JOURNALISM,Gemert-Bakel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Gemert-Bakel,Ons Gemert Bakel,https://onsgemertbakel.nl/agenda,Digitale agenda,NO,WEEKLY,NO,Onbekend,ORGANIZATION,SERVICE,Gemert-Bakel,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Gemert-Bakel,Gemert-bakel.nieuws.nl/,https://gemert-bakel.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,JOURNALISM,Gemert-Bakel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Gemert-Bakel,Gemerts Nieuwsblad,https://www.gemertsnieuwsblad.nl/,Krant / Nieuwssite,YES,DAILY,YES,Gemert Media BV,ORGANIZATION,JOURNALISM,Gemert-Bakel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Gemert-Bakel,Bibliotheek de Lage Beemden,https://www.bibliotheeklagebeemden.nl/klantenservice/nieuws.html,Bibliotheek,YES,UNSURE,NO,Bibliotheek de Lage Beemden,ORGANIZATION,SERVICE,Wijk De Lage Beemden,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Gemert-Bakel,De Bunker ,https://www.bunkergemert.nl/agenda/,Poppodium,YES,WEEKLY,NO,Poppodium De Bunker,ORGANIZATION,SERVICE,Gemert-Bakel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Gemert-Bakel,Omroep Peelrand,https://omroeppeelrand.nl/,Omroep,MIX,DAILY,NO,Stichting Lokale Omroep Gemert-Bakel,ORGANIZATION,MIX,Gemert-Bakel & Laarbeek,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Gemert-Bakel,Eldorado,https://eldorado2023.nl/nieuws/,Theater,YES,UNSURE,NO,Stichting POON,ORGANIZATION,MIX,Gemert-Bakel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Gemert-Bakel,Gemert-Bakel24.nl,http://gemert-bakel24.nl/,Nieuwssite,MIX,DAILY,YES,Punt24,ORGANIZATION,MIX,Gemert-Bakel,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Waalre,Gemeente Waalre,https://www.waalre.nl/nieuws/,Gemeentesite,YES,DAILY,NO,Gemeente Waalre,ORGANIZATION,SERVICE,Waalre,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Waalre,We Connect Waalre,https://weconnectwaalre.nl/nieuws/,Site stichting,YES,UNSURE,NO,Gemeente Waalre,ORGANIZATION,MIX,Waalre,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Waalre,Krant de Schakel,https://www.weekbladdeschakel.nl/,Krant,YES,DAILY,YES,DAS Mediacentrum,ORGANIZATION,MIX,"Waalre, Aalst, Valkenswaard",MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Waalre,Duurzaam Door Waalre,https://www.duurzaamdoorwaalre.nl/nieuws/,Nieuwssite ,YES,WEEKLY,NO,Gemeente Waalre,ORGANIZATION,SERVICE,Waalre,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Waalre,Het Huis van Waalre,https://www.hethuisvanwaalre.nl/agenda/,Bibliotheek ,YES,WEEKLY,NO,Stichting Het Huis van Waalre,ORGANIZATION,SERVICE,Waalre,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Waalre,Oud Aalst-Waalre,https://www.facebook.com/profile.php?id=100077162058062,Facebookpagina,YES,UNSURE,NO,Oud Aalst-Waalre,INDIVIDUAL,MIX,"Waalre, Aalst",MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Asten,Asten.nl,http://asten.nl/,Gemeentesite,YES,WEEKLY,NO,Gemeente Asten,ORGANIZATION,SERVICE,Asten,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Asten,Peelbelang Online,https://www.peelbelangonline.nl/,Nieuwssite,YES,DAILY,YES,DAS Mediacentrum,ORGANIZATION,MIX,Asten & Omgeving,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Asten,Siris ,https://siris.nl/nieuws,Nieuwssite,YES,DAILY,YES,Stichting Omroep Asten Someren,ORGANIZATION,MIX,Asten & Someren,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Asten,Asten.nieuws.nl,http://asten.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,JOURNALISM,Asten,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Someren,De Ruchte,https://www.deruchte.nl/,Theater,YES,WEEKLY,NO,Theater De Ruchte,ORGANIZATION,SERVICE,Someren & omgeving,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Someren,Someren.nieuws.nl,http://someren.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,JOURNALISM,Someren,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Someren,Gemeente Someren,https://www.someren.nl/nieuws,Gemeentesite,YES,WEEKLY,YES,Gemeente Someren,ORGANIZATION,MIX,Someren,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Someren,t Contact,https://www.hetcontact.nl/,Krant,YES,DAILY,YES,DAS Mediacentrum,ORGANIZATION,MIX,Someren,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eersel,Gemeente Eersel,https://www.eersel.nl/nieuws,Gemeentesite,YES,DAILY,NO,Gemeente Eersel,ORGANIZATION,MIX,Eersel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eersel,Eersel.nieuws.nl,http://eersel.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,JOURNALISM,Eersel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Eersel,Muzenval,https://www.muzenval.nl/agenda/,Culturele stichting,YES,WEEKLY,NO,Stichting De Muzenval,ORGANIZATION,SERVICE,Eersel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Heeze-Leende,Heeze-Leende.nl,http://heeze-leende.nl/,Gemeentesite,YES,DAILY,NO,Gemeente Heeze-Leende,ORGANIZATION,MIX,Heeze-Leende,HIGH
+Nederland,Noord-Brabant,Zuidoost-Brabant,Heeze-Leende,RTV Horizon ,https://www.rtvhorizon.nl/?cat=5,Omroep,MIX,DAILY,NO,Stichting PULSAR,ORGANIZATION,MIX,Heeze-Leende & Cranendonck,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Heeze-Leende,heeze-leende24.nl,http://heeze-leende24.nl/,Nieuwssite,YES,DAILY,YES,Punt24,ORGANIZATION,JOURNALISM,Heeze-Leende,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Cranendonck,Gemeente Cranendonck,https://www.cranendonck.nl/nieuws,Gemeentesite,YES,DAILY,NO,Gemeente Cranendonck,ORGANIZATION,MIX,Cranendonck,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Cranendonck,Cranendonck.nieuws.nl,http://cranendonck.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,JOURNALISM,Cranendonck,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Cranendonck,HAC Weekblad,https://www.hacweekblad.eu/,Krant en Nieuwssite,YES,WEEKLY,NO,Gemeente Cranendonck,ORGANIZATION,MIX,Cranendonck,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Cranendonck,Cranendonck24.nl/,https://cranendonck24.nl/,Nieuwssite,YES,DAILY,YES,Punt24,ORGANIZATION,JOURNALISM,Cranendonck,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Valkenswaard,Gemeente Valkenswaard,https://www.valkenswaard.nl/nieuwsberichten,Gemeentesite,YES,DAILY,NO,Gemeente Valkenswaard,ORGANIZATION,MIX,Valkenswaard,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Valkenswaard,https://valkenswaard.nieuws.nl/,https://valkenswaard.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,JOURNALISM,Valkenswaard,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Valkenswaard,Valkenswaards Weekblad,https://www.valkenswaardsweekblad.nl/,Nieuwssite,YES,DAILY,YES,DAS Media Centrum,ORGANIZATION,JOURNALISM,Valkenswaard ,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Valkenswaard,Valkenswaard24.nl,http://gemert-bakel24.nl/,Nieuwssite,MIX,DAILY,YES,Punt24,ORGANIZATION,MIX,Valkenswaard,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Valkenswaard,Je bent een echte Valkenswaarder als... ,https://www.facebook.com/Valkenswaardenaar,Facebookpagina,YES,DAILY,NO,Onbekend (doubleyou7@hotmail.com),INDIVIDUAL,MIX,Valkenswaard,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Bergeijk,Eyckelbergh,https://www.gielen.nl/diensten/weekbladen/,Krant,YES,WEEKLY,YES,Gielen DrukPrint Media,ORGANIZATION,MIX,Bergeijk,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Bergeijk,De Hint,https://www.gielen.nl/diensten/weekbladen/,Krant,YES,WEEKLY,YES,Gielen DrukPrint Media,ORGANIZATION,MIX,Bergeijk & Eersel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Bergeijk,Gemeente Bergeijk,https://www.bergeijk.nl/nieuws,Gemeentesite,YES,DAILY,NO,Gemeente Bergeijk,ORGANIZATION,MIX,Bergeijk,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Bergeijk,Centrum Bergeijk,https://www.facebook.com/centrumbergeijk/?locale=nl_NL,Facebookpagina,YES,DAILY,NO,Centrum Bergeijk,ORGANIZATION,SERVICE,Bergeijk,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Nuenen,Gemeente Nuenen,https://www.nuenen.nl/nieuwsoverzicht,Gemeentesite,YES,DAILY,NO,Gemeente Nuenen,ORGANIZATION,MIX,Nuenen,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Nuenen,Nuenen Centraal,https://www.nuenencentraal.nl/,Nieuwssite,NO,DAILY,UNSURE,Nuenen Centraal,ORGANIZATION,JOURNALISM,Nuenen,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Nuenen,Nuenen.nieuws.nl,http://nuenen.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,JOURNALISM,Nuenen,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Nuenen,Lokale Omroep Nuenen,https://omroepnuenen.nl/,Omroep,YES,DAILY,NO,Lokale Omroep Nuenen,ORGANIZATION,JOURNALISM,Nuenen,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Nuenen,De Nuenense Krant,https://www.denuenensekrant.nl/,Krant,YES,WEEKLY,YES,Uitgeverij Van der Heijden B.V.,ORGANIZATION,JOURNALISM,Nuenen,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Nuenen,Nuenen West,https://www.facebook.com/groups/461403427775440/,Facebookpagina,YES,WEEKLY,NO,Nathalie Verschueren,INDIVIDUAL,MIX,Nuenen,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Laarbeek,Gemeente Laarbeek,https://www.laarbeek.nl/actueel-nieuws,Gemeentesite,YES,DAILY,NO,Gemeente Laarbeek,ORGANIZATION,MIX,Laarbeek,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Laarbeek,De Mooi Laarbeek Krant,https://www.mooilaarbeek.nl/,Nieuwssite / Krant,YES,DAILY,YES,GoedeMorgen Media,ORGANIZATION,MIX,Laarbeek,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Laarbeek,Laarbeek.nieuws.nl,http://laarbeek.nieuws.nl/,Nieuwssite,NO,DAILY,YES,Nort Groep B.V.,ORGANIZATION,JOURNALISM,Laarbeek,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Laarbeek,Laarbeek Actief,https://www.laarbeekactief.nl/nieuws/,Site Vereniging,YES,WEEKLY,NO,Laarbeek Actief,ORGANIZATION,SERVICE,Laarbeek,LOW
+Nederland,Noord-Brabant,Zuidoost-Brabant,Geldrop-Mierlo,Geldrop-mierlo24.nl/,https://geldrop-mierlo24.nl/,Nieuwssite,YES,DAILY,YES,Punt24,ORGANIZATION,JOURNALISM,Geldrop-Mierlo,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Geldrop-Mierlo,Geldrop-Mierlo.nl,http://geldrop-mierlo.nl/,Gemeentesite,YES,DAILY,NO,Gemeente Mierlo,ORGANIZATION,MIX,Geldrop-Mierlo,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Geldrop-Mierlo,Middenstandsbelangen,https://www.middenstandsbelangen.nl/,Nieuwssite / Krant,YES,DAILY,YES,DAS Mediacentrum,ORGANIZATION,JOURNALISM,Geldrop-Mierlo,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Zuidoost-Brabant,Bedrijvig,https://www.bedrijvigonline.nl/,Magazine,YES,DAILY,YES,Talvi Media,ORGANIZATION,JOURNALISM,"Meijerijstad, Oss, Maashorst",MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Zuidoost-Brabant,Brabants Historisch Informatie Centrum,https://www.bhic.nl/nieuws,Site stichting,YES,UNSURE,NO,BHIC,ORGANIZATION,MIX,Brabant,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Zuidoost-Brabant,Land van de Peel,https://www.landvandepeel.nl/nl/ontdek-de-peel/inspiratie,Website regio,YES,UNSURE,NO,Land van de Peel,ORGANIZATION,MIX,De Peel,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Zuidoost-Brabant,Bibliotheek Kempen,http://www.bibliotheekdekempen.nl/actueel/nieuws.html,Bibliotheek,YES,UNSURE,NO,Bibliotheek Kempen,ORGANIZATION,MIX,"Bergeijk, Bladel, Budel, Cranendonck, Eersel, Maarheeze, Oirschot, Reusel en Valkenswaard",MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Zuidoost-Brabant,Weblog Bernard Gerard,https://www.bjmgerard.nl/,Blogger,YES,WEEKLY,NO,Bernard Gerard,INDIVIDUAL,JOURNALISM,Brabant,HIGH
+Nederland,Noord-Brabant,Zuidoost-Brabant,Zuidoost-Brabant,NAH Zuidoost Brabant,https://nahzobrabant.nl/nieuws/,Nieuwssite,YES,DAILY,YES,NAH Netwerk Zuidoost Brabant,ORGANIZATION,MIX,Zuidoost Brabant,MEDIUM
+Nederland,Noord-Brabant,Zuidoost-Brabant,Zuidoost-Brabant,West Brabants Archief,https://westbrabantsarchief.nl/over-het-wba/nieuws,Site stichting,YES,WEEKLY,NO,West Brabants Archief,ORGANIZATION,MIX,West Brabant,HIGH

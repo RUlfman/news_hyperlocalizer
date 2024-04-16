@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+    <h1>News Hyperlocalizer</h1>
+    <p>
+        <a href="{% url 'admin:index' %}" class="btn btn-primary">Admin</a>
+        <a href="{% url 'source_index' %}" class="btn btn-primary">Bronnen</a>
+        <a href="{% url 'story_index' %}" class="btn btn-primary">Verhalen</a>
+    </p>
+    <p>
+        <a href="{% url 'populate_mock_data' %}" class="btn btn-primary">Clear DB & Populate Mock Data</a>
+    </p>
+{% endblock page_content %}

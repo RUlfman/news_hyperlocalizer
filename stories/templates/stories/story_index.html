@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load humanize %}
+
+{% block page_content %}
+
+<h1>Locale verhalen</h1>
+
+<form method="GET">
+    <div class="row mb-3">
+        <div class="col-md-3">
+            <label for="sort">Sort by:</label>
+            <select name="sort" id="sort" class="form-select">
+                <option value="title" {% if request.GET.sort == "title" %}selected{% endif %}>Title (A-Z)</option>
+                <option value="-title" {% if request.GET.sort == "-title" %}selected{% endif %}>Title (Z-A)</option>
+                <option value="created" {% if request.GET.sort == "created" %}selected{% endif %}>
+                    Created Date (oldest first)</option>
+                <option value="-created" {% if request.GET.sort == "-created" %}selected{% endif %}>
+                    Created Date (newest first)</option>
+                <option value="updated" {% if request.GET.sort == "updated" %}selected{% endif %}>
+                    Updated Date (oldest first)</option>
+                <option value="-updated" {% if request.GET.sort == "-updated" %}selected{% endif %}>
+                    Updated Date (newest first)</option>
+                <option value="source" {% if request.GET.sort == "source" %}selected{% endif %}>Source (A-Z)</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label for="name">Filter by title:</label>
+            <input type="text" name="name" id="name" class="form-control" value="{{ request.GET.name }}">
+        </div>
+        <div class="col-md-3">
+            <label for="created">Filter by created date:</label>
+            <input type="date" name="created" id="created" class="form-control" value="{{ request.GET.created }}">
+        </div>
+        <div class="col-md-3">
+            <label for="source">Filter by source:</label>
+            <select name="source" id="source" class="form-select">
+                <option value="">All</option>
+                {% for source in sources %}
+                    <option value="{{ source.id }}" {% if request.GET.source == source.id|stringformat:"s" %}selected
+                    {% endif %}>{{ source.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Apply Filters</button>
+</form>
+
+<div class="row">
+{% for story in stories %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            {% if story.image %}
+                <a href="{% url 'story_detail' story.pk %}">
+                    <img class="card-img-top" src="{{ story.image.url }}">
+                </a>
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                    {{ story.title }}
+                </h5>
+                <p class="card-text">
+                    Van <a href="{{ story.source.website }}" target="_blank">{{ story.source.name }}</a>
+                    <br>{{ story.created|naturaltime }}{% if story.updated %}, updated {{ story.updated|naturaltime }}
+                {% endif %}
+                </p>
+                <p class="card-text">
+                    User needs: {{ story.needs_sum }}
+                    <br> Hoofd drijfveer: {{ story.needs_primary }}
+                </p>
+                <a href="{% url 'story_detail' story.pk %}"
+                   class="btn btn-primary">
+                    Bekijken
+                </a>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+
+{% endblock %}
