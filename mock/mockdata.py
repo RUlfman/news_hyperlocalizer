@@ -39,21 +39,29 @@ def import_sources_from_csv(csv_file_path):
 
             Source.objects.create(**source_data)
 
+def clear_data():
+    # Clear existing data
+    Story.objects.all().delete()
+    Source.objects.all().delete()
 
-def populate_mock_data():
+
+def populate_sources():
     # Clear existing data
     Source.objects.all().delete()
+
+    csv_file_path = 'uploads/csv/sources.csv'
+    import_sources_from_csv(csv_file_path)
+
+
+def populate_stories():
+    # Clear existing data
     Story.objects.all().delete()
 
     fake = Faker()
     image_files = os.listdir('uploads/story_images/')
 
-    csv_file_path = 'uploads/csv/sources.csv'
-    import_sources_from_csv(csv_file_path)
-
     sources = Source.objects.all()
 
-    # Create 10 fake stories for each source
     for source in sources:
 
         # Create 10 stories for each source

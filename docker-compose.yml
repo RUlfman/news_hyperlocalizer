@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  django:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Path to your Dockerfile
+    ports:
+      - "8000:8000"  # Expose port 8000 for Django
+    volumes:
+      - .:/app  # Mount the current directory to /app inside the container

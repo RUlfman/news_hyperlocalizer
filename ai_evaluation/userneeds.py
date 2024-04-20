@@ -1,6 +1,8 @@
 from stories.models import Story
 from django.db.models import Q
 import random
+import requests
+import os
 
 
 def evaluate_stories(date=None):
@@ -20,8 +22,36 @@ def evaluate_story_userneeds(story):
 
 
 def evaluate_userneeds(text):
-    # Do something with text like pass it to the external SmartOcto API.
-    # For now, we're returning a random value between 0 and 100 for each user-need
+    api_key = os.environ.get('SMARTOCTO_API_KEY')
+
+    if api_key:
+        url = "https://api.contentinsights.com/api/v2/analyze"
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json"
+        }
+        data = {
+            "text": text,
+            "cpi_perspective": "user_needs"
+        }
+
+        response = requests.post(url, headers=headers, json=data)
+
+        if response.status_code == 200:
+            result = response.json()
+            return {
+                'needsKnow': result.get('know', 0),
+                'needsUnderstand': result.get('context', 0),
+                'needsFeel': result.get('emotion', 0),
+                'needsDo': result.get('action', 0)
+            }
+        else:
+            print(f"POST API call to {url} failed with status code: {response.status_code}")
+            return generate_random_userneeds()
+    else:
+        return generate_random_userneeds()
+
+def generate_random_userneeds():
     return {
         'needsKnow': random.randint(0, 100),
         'needsUnderstand': random.randint(0, 100),

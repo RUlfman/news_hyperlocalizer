@@ -8,7 +8,9 @@
         <a href="{% url 'story_index' %}" class="btn btn-primary">Verhalen</a>
     </p>
     <p>
-        <a href="{% url 'populate_mock_data' %}" class="btn btn-primary">Clear DB & Populate Mock Data</a>
+        <a href="{% url 'clear_data' %}" class="btn btn-primary">Clear Sources & Stories from DB</a>
+        <a href="{% url 'populate_sources' %}" class="btn btn-primary">Populate sources from CSV</a>
+        <a href="{% url 'populate_stories' %}" class="btn btn-primary">Populate stories with mockdata</a>
         <a href="{% url 'evaluate_userneeds' %}" class="btn btn-primary">Evaluate userneeds</a>
     </p>
 {% endblock page_content %}

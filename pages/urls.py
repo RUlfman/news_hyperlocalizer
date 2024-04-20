@@ -6,6 +6,8 @@ from ai_evaluation import views as ai_evaluation_views
 
 urlpatterns = [
     path("", views.home, name='home'),
-    path('populate_mock_data/', mock_views.populate_mock_data_view, name='populate_mock_data'),
+    path('clear_data/', mock_views.clear_data_view, name='clear_data'),
+    path('populate_sources/', mock_views.populate_sources_view, name='populate_sources'),
+    path('populate_stories/', mock_views.populate_stories_view, name='populate_stories'),
     path('evaluate_userneeds/', ai_evaluation_views.evaluate_userneeds_view, name='evaluate_userneeds'),
 ]

@@ -9,5 +9,5 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('stories/', include('stories.urls')),
     path('sources/', include('sources.urls')),
-    path('populate_mock_data/', mock_views.populate_mock_data_view, name='populate_mock_data'),
+    path('pages/', include('sources.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

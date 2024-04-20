@@ -25,27 +25,15 @@ git clone https://github.com/RUlfman/news_hyperlocalizer.git
 cd news_hyperlocalizer
 ````
 
-### Step 2: Build the Docker Image
+### Step 2: Build & run the Docker Image
 
-Build the Docker image using the provided Dockerfile. Run the following command in the root directory of the project:
-
-```bash
-docker build -t news_hyperlocalizer .
-````
-
-### Step 3: Run the Docker Container
-
-Once the Docker image is built, you can run a Docker container and mount the project directory based on that image. Use the following command:
+Run the following command from a terminal in the root directory of the project:
 
 ```bash
-docker run -p 8000:8000 -v "[/path/to/your/django/project]:/app" news_hyperlocalizer
+docker-compose up
 ````
 
-Note: replace `[/path/to/your/django/project]` with the root directory of the repository (the same folder where the `Dockerfile` file is located). Do **not** replace the `:/app part`, or it will not work.
-
-This command will mount your project directory, and start the Django development server inside the Docker container, and your app will be accessible at http://localhost:8000 in your web browser.
-
-### Step 4: Configure your IDE
+### Step 3: Configure your IDE
 
 The last step is configuring your IDE. I'm going to assume you're using PyCharm. Other IDE's should have similar workflows.
 
@@ -57,24 +45,27 @@ The last step is configuring your IDE. I'm going to assume you're using PyCharm.
 
 **That's it!** You have now mounted your docker image, and configured your IDE. Any changes made to the codebase will now automatically be applied to the docker image, and will be viewable at http://localhost:8000 in your web browser. 
 
-### Additional Commands
-- To stop the Docker container, press `Ctrl + C` in the terminal where it's running.
-- To restart the Docker container, use the ```docker run``` command again.
-- To remove the Docker container, use the ```docker rm``` command followed by the container ID or name.
-- To remove the Docker image, use the ```docker rmi``` command followed by the image ID or name.
+### Stopping the docker container
+To stop the containers, press Ctrl + C (inside the terminal), and then run:
+
+```bash
+docker-compose down
+````
 
 ### Development Workflow
 1. Pull changes from the Git remote repository.
-2. (Re)Build the docker image. **Note**: this is *only* necessary if there were changes to dependencies!
-3. Run the docker image. After you run it the first time with commands, it should be visible in the Docker Desktop app (Windows) where you can run it by clicking the play button.
+2. (Re)Build and run the docker container using ``docker-compose up`` (only necessary the first time or when dependencies change!)
+3. Or, if you've previously build the docker container, just run it from Docker Desktop.
 4. Develop your Django app locally on your machine.
 5. If you made changes to the dependencies (e.g. you installed a new package), rebuild `requirements.txt` (see *note* below)
-6. Commit your changes to Git and push them to the remote repository.
+6. Create a new branch if you're starting changes, and migrate your changes to this new branch before committing. Never commit to main directly!
+7. Commit your changes to Git and push them to the remote repository.
+8. When you're done with the changes in your branch, create a pull request to merge them into main.
 
 ### Note
 - Make sure to update the `requirements.txt` file with any new Python dependencies you install. You can automate this by running 
 ```pip freeze > requirements.txt```
-- Modify the `Dockerfile` file as needed to accommodate changes in your project's dependencies or configuration.
+- Modify the `Dockerfile` file as needed to accommodate changes in the project's dependencies or configuration.
 
 ---
 
@@ -125,6 +116,6 @@ python manage.py startapp [your_app]
 
 ---
 ## Questions or Issues?
-If you have any questions or encounter any issues while setting up the development environment, please don't hesitate to open an issue in this repository or reach out to **Ruben**!.
+If you have any questions or encounter any issues while setting up the development environment, please don't hesitate to open an issue in this repository or reach out to **Ruben**.
 
 #### Happy coding!

@@ -1,3 +1,47 @@
 from django.test import TestCase
+import unittest
+from unittest.mock import patch
+from ai_evaluation.userneeds import evaluate_userneeds
 
-# Create your tests here.
+
+class EvaluateUserNeedsTestCase(TestCase):
+    @patch('ai_evaluation.userneeds.requests.post')
+    def test_evaluate_userneeds_with_api_key(self, mock_post):
+        # Mocking response from the API
+        expected_response = {
+            'know': 80,
+            'context': 70,
+            'emotion': 60,
+            'action': 50
+        }
+        mock_post.return_value.status_code = 200
+        mock_post.return_value.json.return_value = expected_response
+
+        # Mocking the environment variable
+        with patch.dict('os.environ', {'SMARTOCTO_API_KEY': 'test_api_key'}):
+            # Calling the function
+            user_needs = evaluate_userneeds("Sample text")
+
+        # Assertions
+        self.assertEqual(user_needs['needsKnow'], expected_response['know'])
+        self.assertEqual(user_needs['needsUnderstand'], expected_response['context'])
+        self.assertEqual(user_needs['needsFeel'], expected_response['emotion'])
+        self.assertEqual(user_needs['needsDo'], expected_response['action'])
+
+    @patch('ai_evaluation.userneeds.requests.post')
+    def test_evaluate_userneeds_without_api_key(self, mock_post):
+        # Mocking response from the API
+        mock_post.return_value.status_code = 401  # Unauthorized status code
+
+        # Mocking the environment variable
+        with patch.dict('os.environ', {'SMARTOCTO_API_KEY': ''}):
+            # Calling the function
+            user_needs = evaluate_userneeds("Sample text")
+
+        # Assertions
+        for key, value in user_needs.items():
+            self.assertTrue(0 <= value <= 100, f"Value of {key} is not between 0 and 100: {value}")
+
+
+if __name__ == '__main__':
+    unittest.main()
