@@ -46,7 +46,7 @@ class BaseTestCase(TestCase):
 
 class StoryModelTestCase(BaseTestCase):
     def test_needs_sum_property(self):
-        expected_needs_sum = 20 + 30 + 40 + 50
+        expected_needs_sum = self.story.needsKnow + self.story.needsUnderstand + self.story.needsFeel + self.story.needsDo
         self.assertEqual(self.story.needs_sum, expected_needs_sum)
 
     def test_needs_primary_property(self):

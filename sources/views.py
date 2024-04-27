@@ -1,7 +1,5 @@
 from django.shortcuts import render
-from rest_framework import generics
 from .models import Source
-from .serializers import SourceSerializer
 
 
 def source_index(request):
@@ -31,13 +29,3 @@ def source_detail(request, pk):
         'source': source,
     }
     return render(request, "sources/source_detail.html", context)
-
-
-class SourceListCreate(generics.ListCreateAPIView):
-    queryset = Source.objects.all()
-    serializer_class = SourceSerializer
-
-
-class SourceRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Source.objects.all()
-    serializer_class = SourceSerializer

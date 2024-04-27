@@ -11,15 +11,6 @@ WORKDIR /app
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
 
-# Install virtualenv
-RUN pip install virtualenv
-
-# Create a virtual environment
-RUN virtualenv venv
-
-# Activate the virtual environment
-RUN . venv/bin/activate
-
 # Install dependencies within the virtual environment
 RUN pip install -r requirements.txt
 
@@ -30,4 +21,4 @@ COPY . /app
 EXPOSE 8000
 
 # Command to run the application
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["bash", "./entrypoint.sh"]
