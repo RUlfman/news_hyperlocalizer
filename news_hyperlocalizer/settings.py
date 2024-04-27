@@ -32,6 +32,8 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'stories.apps.StoriesConfig',
     'sources.apps.SourcesConfig',
+    'api.apps.ApiConfig',
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,11 +42,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'rest_framework',
+    'rest_framework.authtoken',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -131,3 +136,20 @@ MEDIA_URL = "media/"
 LANGUAGE_CODE = 'nl'
 
 TIME_ZONE = 'Europe/Amsterdam'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        # Add other authentication classes as needed
+    ],
+}
+
+# CORS settings
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = [
+    # add domains for CORS here.
+    # Important: adding domains here will override CORS_ALLOW_ALL_ORIGINS
+]

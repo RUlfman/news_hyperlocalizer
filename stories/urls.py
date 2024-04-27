@@ -5,6 +5,4 @@ from stories import views
 urlpatterns = [
     path('', views.story_index, name='story_index'),
     path('<int:pk>/', views.story_detail, name='story_detail'),
-    path('api/stories/', views.StoryListCreate.as_view(), name='story-list-create'),
-    path('api/stories/<int:pk>/', views.StoryRetrieveUpdateDestroy.as_view(), name='story-detail'),
 ]

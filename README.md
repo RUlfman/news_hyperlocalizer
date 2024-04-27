@@ -115,6 +115,14 @@ python manage.py startapp [your_app]
 ```
 
 ---
+## Using the API
+
+You can visit documentation for the API using swaggerUI at http://localhost:8000/api/swagger/ or using redoc at http://localhost:8000/api/redoc/.
+
+API calls require basic authorization (for now). This means you need to provide a username and password in the authorization header. This needs to be a valid user, which you may create using ``python manage.py createsuperuser``.
+Alternatively, in development you may also use the dummy user, with username and password `api`.
+
+---
 ## Questions or Issues?
 If you have any questions or encounter any issues while setting up the development environment, please don't hesitate to open an issue in this repository or reach out to **Ruben**.
 
