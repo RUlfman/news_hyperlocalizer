@@ -1,11 +1,6 @@
-from django.db import models
-from django.utils import timezone
 from django.shortcuts import render
-from rest_framework import generics
 from django.db.models import Sum
 from stories.models import Story, Source
-from .serializers import StorySerializer
-from datetime import timedelta
 
 
 def story_index(request):
@@ -57,13 +52,3 @@ def story_detail(request, pk):
         'story': story,
     }
     return render(request, "stories/story_detail.html", context)
-
-
-class StoryListCreate(generics.ListCreateAPIView):
-    queryset = Story.objects.all()
-    serializer_class = StorySerializer
-
-
-class StoryRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Story.objects.all()
-    serializer_class = StorySerializer
