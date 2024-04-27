@@ -52,9 +52,9 @@ jobs:
 
       - name: Check Test Results
         run: |
-          if grep -q "<span class='passed'>" report.html; then
-            echo "All tests passed successfully!"
-          else
-            echo "Some tests failed. Blocking pull request..."
+          if grep -q 'data-test-result="fail"' report.html; then
+            echo "Tests failed"
             exit 1
+          else
+            echo "All tests passed"
           fi
