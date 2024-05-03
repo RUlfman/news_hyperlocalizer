@@ -36,3 +36,9 @@ class StorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Story
         fields = '__all__'
+
+
+class ObtainAuthTokenResponseSerializer(serializers.Serializer):
+    username = serializers.CharField()
+    password = serializers.CharField()
+    token = serializers.CharField()
