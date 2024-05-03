@@ -25,6 +25,9 @@ def filter_queryset(queryset, query_params, fields):
 
 class ObtainTokenPairView(TokenObtainPairView):
     serializer_class = ObtainAuthTokenSerializer
+    @swagger_auto_schema(responses={200: ObtainAuthTokenResponseSerializer})
+    def post(self, request, *args, **kwargs):
+        return super().post(request, *args, **kwargs)
 
 
 class SourceListCreate(generics.ListCreateAPIView):
