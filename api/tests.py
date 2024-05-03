@@ -41,7 +41,6 @@ from django.urls import reverse
 
 
 class TestViews(TestCase):
-
     def setUp(self):
         self.client = APIClient()
         self.user = User.objects.create_user(username='testuser', password='testpassword')
@@ -51,6 +50,12 @@ class TestViews(TestCase):
         url = reverse('source-list-create')
         response = self.client.post(url, {'name': 'Test Source'}, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+
+        # Test GET with query parameters
+        response = self.client.get(url, {'name': 'Test Source'}, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        if response.data['results']:
+            self.assertEqual(response.data['results'][0]['name'], 'Test Source')
 
     def test_source_retrieve_update_destroy_view(self):
         self.client.force_authenticate(user=self.user)
@@ -70,6 +75,12 @@ class TestViews(TestCase):
         }
         response = self.client.post(url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+
+        # Test GET with query parameters
+        response = self.client.get(url, {'title': 'Test Story'}, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        if response.data['results']:
+            self.assertEqual(response.data['results'][0]['title'], 'Test Story')
 
     def test_story_retrieve_update_destroy_view(self):
         self.client.force_authenticate(user=self.user)

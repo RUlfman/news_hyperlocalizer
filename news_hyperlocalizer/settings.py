@@ -144,6 +144,14 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
         # Add other authentication classes as needed
     ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10,
+}
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+    }
 }
 
 # CORS settings
