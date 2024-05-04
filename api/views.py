@@ -99,3 +99,28 @@ class StoryRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
     queryset = Story.objects.all()
     serializer_class = StorySerializer
     permission_classes = [IsAuthenticated]
+
+
+class LabelListCreate(generics.ListCreateAPIView):
+    serializer_class = LabelSerializer
+    permission_classes = [IsAuthenticated]
+
+    @swagger_auto_schema(manual_parameters=[
+        openapi.Parameter('name', openapi.IN_QUERY, description="Name of the label", type=openapi.TYPE_STRING, required=False),
+    ])
+    @method_decorator(cache_page(60*15))  # Cache this view for 15 minutes
+    def get(self, request, *args, **kwargs):
+        return super().get(request, *args, **kwargs)
+
+    def get_queryset(self):
+        queryset = Label.objects.all().order_by('name')
+        fields = {
+            'name': 'string',
+        }
+        return filter_queryset(queryset, self.request.query_params, fields)
+
+
+class LabelRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Label.objects.all()
+    serializer_class = LabelSerializer
+    permission_classes = [IsAuthenticated]

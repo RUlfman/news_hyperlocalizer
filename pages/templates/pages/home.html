@@ -6,11 +6,13 @@
         <a href="{% url 'admin:index' %}" class="btn btn-primary">Admin</a>
         <a href="{% url 'source_index' %}" class="btn btn-primary">Bronnen</a>
         <a href="{% url 'story_index' %}" class="btn btn-primary">Verhalen</a>
+        <a href="{% url 'label_index' %}" class="btn btn-primary">Labels</a>
     </p>
     <p>
         <a href="{% url 'clear_data' %}" class="btn btn-primary">Clear Sources & Stories from DB</a>
         <a href="{% url 'populate_sources' %}" class="btn btn-primary">Populate sources from CSV</a>
         <a href="{% url 'populate_stories' %}" class="btn btn-primary">Populate stories with mockdata</a>
+        <a href="{% url 'assign_random_labels' %}" class="btn btn-primary">Assign random labels to stories</a>
         <a href="{% url 'evaluate_userneeds' %}" class="btn btn-primary">Evaluate userneeds</a>
     </p>
 {% endblock page_content %}

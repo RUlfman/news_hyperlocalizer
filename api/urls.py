@@ -24,6 +24,8 @@ urlpatterns = [
     path('sources/<int:pk>/', SourceRetrieveUpdateDestroy.as_view(), name='source-detail'),
     path('stories/', StoryListCreate.as_view(), name='story-list-create'),
     path('stories/<int:pk>/', StoryRetrieveUpdateDestroy.as_view(), name='story-detail'),
+    path('labels/', LabelListCreate.as_view(), name='label-list-create'),
+    path('labels/<int:pk>/', LabelRetrieveUpdateDestroy.as_view(), name='label-detail'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 ]

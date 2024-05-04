@@ -1,2 +1,2 @@
 from sources.models import Source
-from stories.models import Story
+from stories.models import Story, Label

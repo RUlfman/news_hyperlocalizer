@@ -2,6 +2,28 @@ from django.db import models
 from sources.models import Source
 
 
+class LabelType(models.TextChoices):
+    LOCATION = 'LOCATION', 'Locatie'
+    TOPIC = 'TOPIC', 'Onderwerp'
+    CATEGORY = 'CATEGORY', 'Categorie'
+    AUDIENCE = 'AUDIENCE', 'Doelgroep'
+
+COLORS = ['#007bff', '#28a745', '#17a2b8', '#ffc107']  # Blue, Green, Cyan, Yellow
+
+LABEL_COLORS = {label_type: color for label_type, color in zip(LabelType, COLORS)}
+
+
+class Label(models.Model):
+    name = models.CharField(max_length=200, unique=True)
+    type = models.CharField(max_length=20, choices=LabelType.choices)
+
+    def label_color(self):
+        return LABEL_COLORS[self.type]
+
+    def __str__(self):
+        return f'{self.name}: {self.type}'
+
+
 class Story(models.Model):
     title = models.CharField(max_length=200)
     created = models.DateTimeField(blank=True, null=True)
@@ -17,6 +39,8 @@ class Story(models.Model):
     needsUnderstand = models.IntegerField(default=0)
     needsFeel = models.IntegerField(default=0)
     needsDo = models.IntegerField(default=0)
+
+    labels = models.ManyToManyField(Label, through='StoryLabel', blank=True)
 
     @property
     def needs_sum(self):
@@ -36,3 +60,14 @@ class Story(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class StoryLabel(models.Model):
+    story = models.ForeignKey(Story, on_delete=models.CASCADE)
+    label = models.ForeignKey(Label, on_delete=models.CASCADE)
+
+    class Meta:
+        unique_together = ('story', 'label')
+
+    def __str__(self):
+        return f'{self.story.title} - {self.label.name}'
