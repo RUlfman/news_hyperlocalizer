@@ -3,6 +3,15 @@
 
 {% block page_content %}
 <h1>{{ story.title }}</h1>
+
+<p>
+{% for label in story.labels.all %}
+    <a href="{% url 'story_index' %}?label_id={{ label.id }}" class="btn m-1" style="background-color: {{ label.label_color }}; color: white;">
+      {{ label.name }}
+    </a>
+{% endfor %}
+</p>
+
 <p class="card-text">
     {{ story.created|naturaltime }}{% if story.updated %}, updated {{ story.updated|naturaltime }}{% endif %}
     <br>Door {{ story.author }} op <a href="{{ story.source.website }}" target="_blank">{{ story.source.name }}</a>

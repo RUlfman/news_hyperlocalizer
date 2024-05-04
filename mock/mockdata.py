@@ -1,6 +1,6 @@
 from faker import Faker
 from django.utils import timezone
-from stories.models import Story
+from stories.models import Story, Label
 from sources.models import *
 import os
 import random
@@ -91,3 +91,22 @@ def populate_stories():
                 source=source
             )
 
+
+def assign_random_labels():
+    # Get all stories that don't have any labels
+    stories_without_labels = Story.objects.filter(labels__isnull=True)
+
+    # Get all labels
+    all_labels = list(Label.objects.all())
+
+    for story in stories_without_labels:
+        # Generate a random number of labels
+        num_labels = random.randint(1, 6)
+
+        # Randomly select labels
+        labels = random.sample(all_labels, num_labels)
+
+        # Assign the labels to the story
+        story.labels.set(labels)
+
+    print(f"Assigned random labels to {stories_without_labels.count()} stories.")

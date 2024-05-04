@@ -29,6 +29,15 @@ class TestUrls(SimpleTestCase):
         self.assertEqual(resolve(url).func.view_class, StoryRetrieveUpdateDestroy)
         self.assertEqual(resolve(url).func.view_class.permission_classes, [IsAuthenticated])
 
+    def test_label_list_create_url(self):
+        url = reverse('label-list-create')
+        self.assertEqual(resolve(url).func.view_class, LabelListCreate)
+        self.assertEqual(resolve(url).func.view_class.permission_classes, [IsAuthenticated])
+
+    def test_label_retrieve_update_destroy_url(self):
+        url = reverse('label-detail', args=[1])  # Assuming the pk is 1
+        self.assertEqual(resolve(url).func.view_class, LabelRetrieveUpdateDestroy)
+        self.assertEqual(resolve(url).func.view_class.permission_classes, [IsAuthenticated])
 
 
 # Views tests
@@ -74,6 +83,8 @@ class TestViews(TestCase):
             'url': 'https://example.com/test-story'
         }
         response = self.client.post(url, data, format='json')
+        if response.status_code != status.HTTP_201_CREATED:
+            print(response.data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
         # Test GET with query parameters
@@ -86,6 +97,30 @@ class TestViews(TestCase):
         self.client.force_authenticate(user=self.user)
         story = Story.objects.create(title='Test Story')
         url = reverse('story-detail', kwargs={'pk': story.pk})
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_label_list_create_view(self):
+        self.client.force_authenticate(user=self.user)
+        url = reverse('label-list-create')
+        data = {
+            'name': 'Test Label',
+            'type': 'LOCATION'
+        }
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+
+        # Test GET with query parameters
+        response = self.client.get(url, {'name': 'Test Label'}, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        if response.data['results']:
+            self.assertEqual(response.data['results'][0]['name'], 'Test Label')
+
+
+    def test_label_retrieve_update_destroy_view(self):
+        self.client.force_authenticate(user=self.user)
+        label = Label.objects.create(name='Test Label', type='LOCATION')
+        url = reverse('label-detail', kwargs={'pk': label.pk})
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
@@ -110,15 +145,43 @@ class TestSerializers(TestCase):
         self.assertFalse(serializer.is_valid())
 
     def test_story_serializer(self):
+        # Create a Story instance
+        story = Story.objects.create(
+            title='Test Story',
+            story='Test Story Content',
+            summary='Test Summary',
+            url='https://example.com/test-story'
+        )
+
+        # Create some Label instances
+        label1 = Label.objects.create(name='Label 1', type='LOCATION')
+        label2 = Label.objects.create(name='Label 2', type='LOCATION')
+
+        # Update the Story instance with new labels data
         data = {
-            'title': 'Test Story',
-            'story': 'Test Story Content',
-            'summary': 'Test Summary',
-            'url': 'https://example.com/test-story'
+            'title': 'Updated Test Story',
+            'story': 'Updated Test Story Content',
+            'summary': 'Updated Test Summary',
+            'url': 'https://example.com/updated-test-story',
+            'labels': [label1.id, label2.id]  # Use the IDs of the Label instances
         }
-        serializer = StorySerializer(data=data)
+        serializer = StorySerializer(instance=story, data=data)
+        if not serializer.is_valid():
+            print(serializer.errors)
         self.assertTrue(serializer.is_valid())
+
+        # Save the updated Story instance
+        updated_story = serializer.save()
+
+        # Check that the labels were updated correctly
+        self.assertEqual(updated_story.labels.count(), 2)
+        self.assertIn(label1, updated_story.labels.all())
+        self.assertIn(label2, updated_story.labels.all())
 
     def test_source_serializer(self):
         serializer = SourceSerializer(data={'name': 'Test Source'})
+        self.assertTrue(serializer.is_valid())
+
+    def test_label_serializer(self):
+        serializer = LabelSerializer(data={'name': 'Test Label', 'type': 'LOCATION'})
         self.assertTrue(serializer.is_valid())
