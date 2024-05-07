@@ -5,7 +5,7 @@ from story_evaluation.story_userneeds import evaluate_userneeds
 
 
 class EvaluateUserNeedsTestCase(TestCase):
-    @patch('story_evaluation.userneeds.requests.post')
+    @patch('story_evaluation.story_userneeds.requests.post')
     def test_evaluate_userneeds_with_api_key(self, mock_post):
         # Mocking response from the API
         expected_response = {
@@ -28,7 +28,7 @@ class EvaluateUserNeedsTestCase(TestCase):
         self.assertEqual(user_needs['needsFeel'], expected_response['emotion'])
         self.assertEqual(user_needs['needsDo'], expected_response['action'])
 
-    @patch('story_evaluation.userneeds.requests.post')
+    @patch('story_evaluation.story_userneeds.requests.post')
     def test_evaluate_userneeds_without_api_key(self, mock_post):
         # Mocking response from the API
         mock_post.return_value.status_code = 401  # Unauthorized status code
