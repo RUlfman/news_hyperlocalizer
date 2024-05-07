@@ -37,7 +37,9 @@ jobs:
           name: test-reports
           path: | 
             report.html
+            assets/style.css
             htmlcov/index.html
+            htmlcov/style.css
 
   check:
     name: Check Test Results

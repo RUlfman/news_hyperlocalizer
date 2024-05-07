@@ -5,7 +5,7 @@ import requests
 import os
 
 
-def evaluate_stories(date=None):
+def evaluate_stories_userneeds(date=None):
     if date is None:
         stories = Story.objects.filter(needsKnow=0, needsUnderstand=0, needsFeel=0, needsDo=0)
     else:
