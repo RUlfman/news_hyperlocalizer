@@ -10,15 +10,16 @@ on:
 
 jobs:
   test:
-    name: Run Tests
+    name: Run and Check Tests
     runs-on: ubuntu-latest
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.head_ref != 'main')
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v4
         with:
           python-version: 3
 
@@ -32,27 +33,13 @@ jobs:
 
       - name: Upload Test Reports
         uses: actions/upload-artifact@v4
-
         with:
           name: test-reports
-          path: | 
+          path: |
             report.html
             assets/style.css
             htmlcov/index.html
             htmlcov/style.css
-
-  check:
-    name: Check Test Results
-    runs-on: ubuntu-latest
-    needs: test
-
-    steps:
-      - name: Download Test Reports
-        uses: actions/download-artifact@v4
-
-        with:
-          name: test-reports
-          path: .
 
       - name: Check Test Results
         run: |
