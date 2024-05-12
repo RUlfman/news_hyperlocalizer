@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OWNER: ${{ github.repository_owner }}
-
     steps:
       - name: Convert OWNER to lowercase
         run: echo "OWNER=$(echo $OWNER | tr '[A-Z]' '[a-z]')" >> $GITHUB_ENV
@@ -26,7 +25,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ env.OWNER }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.GHCR_TOKEN }}
 
       - name: Build and push
         uses: docker/build-push-action@v2
