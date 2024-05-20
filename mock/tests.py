@@ -2,9 +2,9 @@ from django.test import TestCase
 import pytest
 import unittest
 from unittest.mock import patch, MagicMock
-from mock.mockdata import import_sources_from_csv, clear_data, populate_sources, populate_stories
+from mock.mockdata import import_sources_from_csv, clear_data, create_labels, populate_stories
 from sources.models import Source
-from stories.models import Story
+from stories.models import Story, LabelType
 import os
 
 
@@ -66,6 +66,20 @@ class TestPopulateStories(unittest.TestCase):
 
         # Assertions
         self.assertTrue(Story.objects.exists())
+
+class TestCreateLabels(unittest.TestCase):
+    @patch('stories.models.Label.objects.get_or_create')
+    @pytest.mark.django_db
+    def test_create_labels(self, mock_get_or_create):
+        # Call the function
+        create_labels()
+
+        # Check if the get_or_create method was called at least once for each label type
+        call_args_list = [call[1] for call in mock_get_or_create.call_args_list]  # Extract the kwargs of each call
+        called_label_types = [args['type'] for args in call_args_list]  # Extract the 'type' arg of each call
+
+        for label_type in LabelType:
+            self.assertIn(label_type, called_label_types)
 
 if __name__ == '__main__':
     unittest.main()

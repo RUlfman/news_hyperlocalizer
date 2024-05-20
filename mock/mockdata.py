@@ -1,6 +1,6 @@
 from faker import Faker
 from django.utils import timezone
-from stories.models import Story, Label
+from stories.models import Story, Label, LabelType
 from sources.models import *
 import os
 import random
@@ -43,6 +43,7 @@ def clear_data():
     # Clear existing data
     Story.objects.all().delete()
     Source.objects.all().delete()
+    Label.objects.all().delete()
 
 
 def populate_sources():
@@ -93,6 +94,8 @@ def populate_stories():
 
 
 def assign_random_labels():
+    create_labels()
+
     # Get all stories that don't have any labels
     stories_without_labels = Story.objects.filter(labels__isnull=True)
 
@@ -110,3 +113,81 @@ def assign_random_labels():
         story.labels.set(labels)
 
     print(f"Assigned random labels to {stories_without_labels.count()} stories.")
+
+def create_labels():
+
+    # Define some label names and types
+    audience_labels = [
+        "Algemeen Publiek",
+        "Professionals",
+        "Studenten",
+        "Senioren",
+        "Tieners",
+        "Ouders",
+        "Tech Liefhebbers",
+        "Investeerders",
+        "Reizigers",
+        "Gezondheidsbewuste Personen"
+    ]
+
+    category_labels = [
+        "Politiek",
+        "Economie",
+        "Technologie",
+        "Sport",
+        "Amusement",
+        "Gezondheid",
+        "Wetenschap",
+        "Onderwijs",
+        "Milieu",
+        "Lifestyle"
+    ]
+
+    location_labels = [
+        "Eindhoven",
+        "Tilburg",
+        "Breda",
+        "Den Bosch",
+        "Helmond",
+        "Roosendaal",
+        "Oss",
+        "Bergen op Zoom",
+        "Waalwijk",
+        "Veghel"
+    ]
+
+    topic_labels = [
+        "Binnenlands Nieuws",
+        "Buitenlands Nieuws",
+        "Financieel Nieuws",
+        "Zakelijk Nieuws",
+        "Innovatie",
+        "Gadgets",
+        "Voetbal",
+        "Olympische Spelen",
+        "Film en Televisie",
+        "Muziek",
+        "Ziekte en Behandeling",
+        "Gezond Leven",
+        "Onderzoek",
+        "Nieuwe Ontdekkingen",
+        "Basisonderwijs",
+        "Hoger Onderwijs",
+        "Klimaatverandering",
+        "Natuurbehoud",
+        "Mode",
+        "Reizen"
+    ]
+
+    # Create the labels
+    for label_name in audience_labels:
+        Label.objects.get_or_create(name=label_name, type=LabelType.AUDIENCE)
+    for label_name in category_labels:
+        Label.objects.get_or_create(name=label_name, type=LabelType.CATEGORY)
+    for label_name in location_labels:
+        Label.objects.get_or_create(name=label_name, type=LabelType.LOCATION)
+    for label_name in topic_labels:
+        Label.objects.get_or_create(name=label_name, type=LabelType.TOPIC)
+
+
+
