@@ -39,24 +39,26 @@ class Story(models.Model):
     needsUnderstand = models.IntegerField(default=0)
     needsFeel = models.IntegerField(default=0)
     needsDo = models.IntegerField(default=0)
+    needsSum = models.IntegerField(default=0)
+
+    needsPrimary = models.CharField(max_length=20, blank=True)
 
     labels = models.ManyToManyField(Label, through='StoryLabel', blank=True)
 
-    @property
-    def needs_sum(self):
-        return self.needsKnow + self.needsUnderstand + self.needsFeel + self.needsDo
+    def save(self, *args, **kwargs):
 
-    @property
-    def needs_primary(self):
         user_needs = {
             'know': self.needsKnow,
             'understand': self.needsUnderstand,
             'feel': self.needsFeel,
             'do': self.needsDo
         }
-
         max_score_field = max(user_needs, key=user_needs.get)
-        return max_score_field.capitalize()
+        self.needsPrimary = max_score_field.capitalize()
+
+        self.needsSum = self.needsKnow + self.needsUnderstand + self.needsFeel + self.needsDo
+
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return self.title

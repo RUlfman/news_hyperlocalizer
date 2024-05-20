@@ -64,8 +64,8 @@
                 {% endif %}
                 </p>
                 <p class="card-text">
-                    User needs: {{ story.needs_sum }}
-                    <br> Hoofd drijfveer: {{ story.needs_primary }}
+                    User needs: {{ story.needsSum }}
+                    <br> Hoofd drijfveer: {{ story.needsPrimary }}
                 </p>
                 <a href="{% url 'story_detail' story.pk %}"
                    class="btn btn-primary">

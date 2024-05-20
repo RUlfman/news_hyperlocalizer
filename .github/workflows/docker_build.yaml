@@ -34,3 +34,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ghcr.io/${{ env.OWNER }}/news_hyperlocalizer
+          public: true

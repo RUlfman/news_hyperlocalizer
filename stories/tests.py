@@ -47,11 +47,11 @@ class BaseTestCase(TestCase):
 class StoryModelTestCase(BaseTestCase):
     def test_needs_sum_property(self):
         expected_needs_sum = self.story.needsKnow + self.story.needsUnderstand + self.story.needsFeel + self.story.needsDo
-        self.assertEqual(self.story.needs_sum, expected_needs_sum)
+        self.assertEqual(self.story.needsSum, expected_needs_sum)
 
     def test_needs_primary_property(self):
         expected_needs_primary = 'Do'  # Since 'Do' has the highest score
-        self.assertEqual(self.story.needs_primary, expected_needs_primary)
+        self.assertEqual(self.story.needsPrimary, expected_needs_primary)
 
     def test_string_representation(self):
         expected_string_representation = 'Test Story'
@@ -92,5 +92,5 @@ class StoryDetailTemplateTestCase(BaseTestCase):
         self.assertContains(response, 'Apply Filters')
         self.assertContains(response, self.story.title)
         self.assertContains(response, self.story.source.name)
-        self.assertContains(response, f'{self.story.needs_sum}')
-        self.assertContains(response, f'{self.story.needs_primary}')
+        self.assertContains(response, f'{self.story.needsSum}')
+        self.assertContains(response, f'{self.story.needsPrimary}')
