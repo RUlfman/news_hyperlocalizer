@@ -9,17 +9,22 @@ from datetime import datetime
 
 from .serializers import *
 
-
 # Helper function to filter queryset based on query parameters
-def filter_queryset(queryset, query_params, fields):
+def filter_queryset(queryset, query_params, fields, min_value_fields):
     for field, field_type in fields.items():
         value = query_params.get(field, None)
         if value is not None:
             if field_type == 'int':
                 value = int(value)
-            elif field_type == 'date':
-                value = datetime.strptime(value, '%Y-%m-%d').date()
-            queryset = queryset.filter(**{f"{field}__icontains": value})
+                if field in min_value_fields:
+                    queryset = queryset.filter(**{f"{field}__gte": value})
+                else:
+                    queryset = queryset.filter(**{f"{field}": value})
+            elif field_type == 'string':
+                if field == 'label':
+                    queryset = queryset.filter(labels__name__icontains=value)
+                else:
+                    queryset = queryset.filter(**{f"{field}__icontains": value})
     return queryset
 
 
@@ -56,7 +61,7 @@ class SourceListCreate(generics.ListCreateAPIView):
             'region': 'string',
             'municipality': 'string'
         }
-        return filter_queryset(queryset, self.request.query_params, fields)
+        return filter_queryset(queryset, self.request.query_params, fields, [])
 
 
 class SourceRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
@@ -75,8 +80,14 @@ class StoryListCreate(generics.ListCreateAPIView):
         openapi.Parameter('author', openapi.IN_QUERY, description="Author of the story", type=openapi.TYPE_STRING, required=False),
         openapi.Parameter('summary', openapi.IN_QUERY, description="Summary of the story", type=openapi.TYPE_STRING, required=False),
         openapi.Parameter('source_id', openapi.IN_QUERY, description="ID of the source", type=openapi.TYPE_INTEGER, required=False),
-        openapi.Parameter('created', openapi.IN_QUERY, description="Creation date of the story", type=openapi.TYPE_STRING, format=openapi.FORMAT_DATE, required=False),
-        openapi.Parameter('updated', openapi.IN_QUERY, description="Update date of the story", type=openapi.TYPE_STRING, format=openapi.FORMAT_DATE, required=False)
+        openapi.Parameter('created', openapi.IN_QUERY, description="Date the story was created", type=openapi.TYPE_STRING, required=False),
+        openapi.Parameter('updated', openapi.IN_QUERY, description="Date the story was updated", type=openapi.TYPE_STRING, required=False),
+        openapi.Parameter('needsKnow', openapi.IN_QUERY, description="Minimum 'Know' userneed of the story", type=openapi.TYPE_INTEGER, required=False),
+        openapi.Parameter('needsUnderstand', openapi.IN_QUERY, description="Minimum 'Understand' userneed of the story", type=openapi.TYPE_INTEGER, required=False),
+        openapi.Parameter('needsFeel', openapi.IN_QUERY, description="Minimum 'Feel' userneed of the story", type=openapi.TYPE_INTEGER, required=False),
+        openapi.Parameter('needsDo', openapi.IN_QUERY, description="Minimum 'Do' userneed of the story", type=openapi.TYPE_INTEGER, required=False),
+        openapi.Parameter('needsSum', openapi.IN_QUERY, description="Minimum Sum of userneeds of the story", type=openapi.TYPE_INTEGER, required=False),
+        openapi.Parameter('label', openapi.IN_QUERY, description="Label of the story", type=openapi.TYPE_STRING, required=False),
     ])
     @method_decorator(cache_page(60*15))  # Cache this view for 15 minutes
     def get(self, request, *args, **kwargs):
@@ -90,10 +101,16 @@ class StoryListCreate(generics.ListCreateAPIView):
             'summary': 'string',
             'source_id': 'int',
             'created': 'date',
-            'updated': 'date'
+            'updated': 'date',
+            'needsKnow': 'int',
+            'needsUnderstand': 'int',
+            'needsFeel': 'int',
+            'needsDo': 'int',
+            'needsSum': 'int',
+            'label': 'string',
         }
-        return filter_queryset(queryset, self.request.query_params, fields)
-
+        min_value_fields = ['needsKnow', 'needsUnderstand', 'needsFeel', 'needsDo', 'needsSum']
+        return filter_queryset(queryset, self.request.query_params, fields, min_value_fields)
 
 class StoryRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
     queryset = Story.objects.all()
@@ -117,7 +134,7 @@ class LabelListCreate(generics.ListCreateAPIView):
         fields = {
             'name': 'string',
         }
-        return filter_queryset(queryset, self.request.query_params, fields)
+        return filter_queryset(queryset, self.request.query_params, fields, [])
 
 
 class LabelRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):

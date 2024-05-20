@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   django:
+    container_name: 'News Hyperlocalizer'  # Name of the container
     build:
       context: .
       dockerfile: Dockerfile  # Path to your Dockerfile
