@@ -25,7 +25,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.GHCR_TOKEN }}
 
       - name: Build and push
         id: build-and-push
@@ -40,7 +40,7 @@ jobs:
         run: |
           PACKAGE_VERSION=$(echo ${{ steps.build-and-push.outputs.digest }} | cut -d : -f 2)
           curl -X PATCH \
-            -H "Authorization: bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Authorization: bearer ${{ secrets.GHCR_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
             https://api.github.com/user/packages/container/${{ env.OWNER }}/news_hyperlocalizer/versions/$PACKAGE_VERSION \
             -d '{"visibility":"public"}'
