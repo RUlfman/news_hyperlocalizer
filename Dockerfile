@@ -1,5 +1,5 @@
-# Use the official Python image as a base image
-FROM python:3
+# First stage: amd64 architecture
+FROM --platform=linux/amd64 python:3 as amd64
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
@@ -36,6 +36,20 @@ RUN wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chrom
   && unzip chromedriver_linux64.zip && rm -dfr chromedriver_linux64.zip \
   && mv chromedriver /usr/bin/chromedriver \
   && chmod +x /usr/bin/chromedriver
+
+# Second stage: arm64 architecture
+FROM --platform=linux/arm64 python:3
+
+# Copy the necessary files from the amd64 stage
+COPY --from=amd64 /usr/bin/google-chrome /usr/bin/
+COPY --from=amd64 /opt/google/chrome /opt/google/chrome
+COPY --from=amd64 /usr/bin/chromedriver /usr/bin/
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY . /app
 
 # Expose port 8000 to the outside world
 EXPOSE 8000
