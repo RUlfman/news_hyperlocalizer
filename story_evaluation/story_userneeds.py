@@ -1,8 +1,13 @@
+from dotenv import load_dotenv
 from stories.models import Story
 from django.db.models import Q
 import random
 import requests
 import os
+
+
+# Load environment variables from .env file
+load_dotenv()
 
 
 def evaluate_stories_userneeds(date=None):
@@ -22,7 +27,7 @@ def evaluate_story_userneeds(story):
 
 
 def evaluate_userneeds(text):
-    api_key = os.environ.get('SMARTOCTO_API_KEY')
+    api_key = os.getenv('SMARTOCTO_API_KEY')
 
     if api_key:
         url = "https://api.contentinsights.com/api/v2/analyze"

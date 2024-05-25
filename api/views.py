@@ -6,7 +6,11 @@ from django.views.decorators.cache import cache_page
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
 from datetime import datetime
+from django.http import JsonResponse, HttpResponseBadRequest
+from django.views.decorators.csrf import csrf_exempt
+from .models import Source
 
+from story_collection.collection import collect_stories_from_source
 from .serializers import *
 
 # Helper function to filter queryset based on query parameters
@@ -141,3 +145,34 @@ class LabelRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
     queryset = Label.objects.all()
     serializer_class = LabelSerializer
     permission_classes = [IsAuthenticated]
+
+
+from rest_framework.decorators import api_view
+
+@csrf_exempt
+@swagger_auto_schema(
+    method='post',
+    operation_description="Collect stories from a specific source",
+    request_body=openapi.Schema(
+        type=openapi.TYPE_OBJECT,
+        properties={
+            'sourceid': openapi.Schema(type=openapi.TYPE_INTEGER, description='ID of the source'),
+        },
+        required=['sourceid'],
+    ),
+    responses={200: openapi.Response(description="Stories collected successfully")}
+)
+@api_view(['POST'])
+def collect_stories(request):
+    if request.method == 'POST':
+        source_id = request.data.get('sourceid')
+        if not source_id:
+            return HttpResponseBadRequest("sourceid is required")
+        try:
+            source = Source.objects.get(id=source_id)
+        except Source.DoesNotExist:
+            return HttpResponseBadRequest("No Source object found with ID {}".format(source_id))
+        collect_stories_from_source(source)
+        return JsonResponse({"message": "Stories collected successfully"})
+    else:
+        return HttpResponseBadRequest("Invalid HTTP method")

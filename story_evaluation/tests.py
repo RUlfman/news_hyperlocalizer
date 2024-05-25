@@ -6,7 +6,8 @@ from story_evaluation.story_userneeds import evaluate_userneeds
 
 class EvaluateUserNeedsTestCase(TestCase):
     @patch('story_evaluation.story_userneeds.requests.post')
-    def test_evaluate_userneeds_with_api_key(self, mock_post):
+    @patch('os.getenv')
+    def test_evaluate_userneeds_with_api_key(self, mock_getenv, mock_post):
         # Mocking response from the API
         expected_response = {
             'know': 80,
@@ -18,9 +19,10 @@ class EvaluateUserNeedsTestCase(TestCase):
         mock_post.return_value.json.return_value = expected_response
 
         # Mocking the environment variable
-        with patch.dict('os.environ', {'SMARTOCTO_API_KEY': 'test_api_key'}):
-            # Calling the function
-            user_needs = evaluate_userneeds("Sample text")
+        mock_getenv.return_value = 'test_api_key'
+
+        # Calling the function
+        user_needs = evaluate_userneeds("Sample text")
 
         # Assertions
         self.assertEqual(user_needs['needsKnow'], expected_response['know'])
@@ -29,14 +31,16 @@ class EvaluateUserNeedsTestCase(TestCase):
         self.assertEqual(user_needs['needsDo'], expected_response['action'])
 
     @patch('story_evaluation.story_userneeds.requests.post')
-    def test_evaluate_userneeds_without_api_key(self, mock_post):
+    @patch('os.getenv')
+    def test_evaluate_userneeds_without_api_key(self, mock_getenv, mock_post):
         # Mocking response from the API
         mock_post.return_value.status_code = 401  # Unauthorized status code
 
         # Mocking the environment variable
-        with patch.dict('os.environ', {'SMARTOCTO_API_KEY': ''}):
-            # Calling the function
-            user_needs = evaluate_userneeds("Sample text")
+        mock_getenv.return_value = ''
+
+        # Calling the function
+        user_needs = evaluate_userneeds("Sample text")
 
         # Assertions
         for key, value in user_needs.items():

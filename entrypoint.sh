@@ -1,5 +1,21 @@
 #!/bin/bash
 
+# Check if the OpenAI API key is set
+if ! grep -q "OPENAI_API_KEY" .env
+then
+  echo "The OpenAI API key is not set. Please enter it now:"
+  read OPENAI_API_KEY
+  echo "OPENAI_API_KEY=$OPENAI_API_KEY" >> .env
+fi
+
+# Check if the SmartOcto API key is set
+if ! grep -q "SMARTOCTO_API_KEY" .env
+then
+  echo "The SmartOcto API key is not set. Please enter it now:"
+  read SMARTOCTO_API_KEY
+  echo "SMARTOCTO_API_KEY=$SMARTOCTO_API_KEY" >> .env
+fi
+
 # Apply database migrations
 python manage.py makemigrations --noinput
 python manage.py migrate
