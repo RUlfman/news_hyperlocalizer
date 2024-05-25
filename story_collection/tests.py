@@ -14,6 +14,7 @@ from story_collection.openai_utils import process_content_with_openai
 class TestCollection(unittest.TestCase):
     @patch('story_collection.collection.get_scraper')
     @patch('story_collection.collection.process_content_with_openai')
+    @patch('os.environ', {'OPENAI_API_KEY': 'test_openai_api_key' })
     def test_extract_urls_from_source(self, mock_process_content_with_openai, mock_get_scraper):
         # Arrange
         mock_scraper = MagicMock()
@@ -33,6 +34,7 @@ class TestCollection(unittest.TestCase):
 
     @patch('story_collection.collection.get_scraper')
     @patch('story_collection.collection.process_content_with_openai')
+    @patch('os.environ', {'OPENAI_API_KEY': 'test_openai_api_key' })
     def test_extract_urls_from_source_with_invalid_source(self, mock_process_content_with_openai, mock_get_scraper):
         # Arrange
         mock_get_scraper.side_effect = Exception
@@ -48,6 +50,7 @@ class TestCollection(unittest.TestCase):
     @patch('story_collection.collection.process_content_with_openai')
     @patch('story_collection.collection.extract_story_content')
     @patch('story_collection.collection.Story.objects.update_or_create')
+    @patch('os.environ', {'OPENAI_API_KEY': 'test_openai_api_key' })
     def test_extract_stories_from_urls(self, mock_update_or_create, mock_extract_story_content, mock_process_content_with_openai, mock_get_scraper):
         # Arrange
         mock_scraper = MagicMock()
@@ -131,6 +134,7 @@ class TestScrapingUtils(unittest.TestCase):
 
 # Tests for story_collection/openai_utils.py
 class TestOpenAIUtils(unittest.TestCase):
+    @patch('os.environ', {'OPENAI_API_KEY': 'test_openai_api_key' })
     @patch('openai.OpenAI')
     def test_process_content_with_openai(self, mock_openai):
         # Arrange
