@@ -19,7 +19,9 @@
 </p>
 <div class="row">
     <div class="col-md-6">
-        {% if story.image %}
+        {% if story.image_url %}
+            <img src="{{ story.image_url }}" width="100%">
+        {% elif story.image %}
             <img src="{{ story.image.url }}" width="100%">
         {% endif %}
     </div>

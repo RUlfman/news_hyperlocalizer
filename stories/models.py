@@ -33,6 +33,7 @@ class Story(models.Model):
     summary = models.TextField()
     url = models.URLField()
     image = models.FileField(upload_to="story_images/", blank=True)
+    image_url = models.URLField(blank=True)
     source = models.ForeignKey(Source, on_delete=models.CASCADE, null=True)
 
     needsKnow = models.IntegerField(default=0)

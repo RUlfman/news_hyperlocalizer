@@ -49,7 +49,11 @@
 {% for story in stories %}
     <div class="col-md-4">
         <div class="card mb-2">
-            {% if story.image %}
+            {% if story.image_url %}
+                <a href="{% url 'story_detail' story.pk %}">
+                    <img class="card-img-top" src="{{ story.image_url }}">
+                </a>
+            {% elif story.image %}
                 <a href="{% url 'story_detail' story.pk %}">
                     <img class="card-img-top" src="{{ story.image.url }}">
                 </a>
