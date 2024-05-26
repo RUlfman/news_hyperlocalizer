@@ -10,32 +10,29 @@ WORKDIR /app
 
 # Copy the dependencies file to the working directory
 COPY requirements.txt .
-# Install dependencies within the virtual environment
+
+# Install dependencies
 RUN pip install -r requirements.txt
 
-# Create an empty .env file
+# Create an empty .env file (if needed)
 RUN touch .env
-
-# Copy the current directory contents into the container at /app
-COPY . /app
 
 # Add a label to link the image to the GitHub repository
 LABEL org.opencontainers.image.source=https://github.com/RUlfman/news_hyperlocalizer
 
-# please review all the latest versions here:
+# Please review all the latest versions here:
 # https://sites.google.com/a/chromium.org/chromedriver/
 ENV CHROMEDRIVER_VERSION=114.0.5735.90
 
-### install chrome
-RUN apt-get update && apt-get install -y wget && apt-get install -y zip
-RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-RUN apt-get install -y ./google-chrome-stable_current_amd64.deb
-
-### install chromedriver
+# Install Chrome and Chromedriver
+RUN apt-get update && apt-get install -y wget zip
+RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
+&& apt-get install -y ./google-chrome-stable_current_amd64.deb \
+&& rm google-chrome-stable_current_amd64.deb
 RUN wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip \
-  && unzip chromedriver_linux64.zip && rm -dfr chromedriver_linux64.zip \
-  && mv chromedriver /usr/bin/chromedriver \
-  && chmod +x /usr/bin/chromedriver
+&& unzip chromedriver_linux64.zip && rm chromedriver_linux64.zip \
+&& mv chromedriver /usr/bin/chromedriver \
+&& chmod +x /usr/bin/chromedriver
 
 # Second stage: arm64 architecture
 FROM --platform=linux/arm64 python:3
@@ -50,6 +47,10 @@ WORKDIR /app
 
 # Copy the current directory contents into the container at /app
 COPY . /app
+
+# Install dependencies
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 
 # Expose port 8000 to the outside world
 EXPOSE 8000
