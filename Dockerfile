@@ -27,27 +27,27 @@ ENV CHROMEDRIVER_VERSION=114.0.5735.90
 # Install Chrome and Chromedriver
 RUN apt-get update && apt-get install -y wget zip
 RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
-&& apt-get install -y ./google-chrome-stable_current_amd64.deb \
+&& dpkg -i google-chrome-stable_current_amd64.deb || apt-get -fy install \
 && rm google-chrome-stable_current_amd64.deb
 RUN wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip \
 && unzip chromedriver_linux64.zip && rm chromedriver_linux64.zip \
-&& mv chromedriver /usr/bin/chromedriver \
-&& chmod +x /usr/bin/chromedriver
+&& mv chromedriver /usr/local/bin/chromedriver \
+&& chmod +x /usr/local/bin/chromedriver
 
 # Second stage: arm64 architecture
 FROM --platform=linux/arm64 python:3
 
 # Copy the necessary files from the amd64 stage
-COPY --from=amd64 /usr/bin/google-chrome /usr/bin/
+COPY --from=amd64 /usr/local/bin/chromedriver /usr/local/bin/chromedriver
+COPY --from=amd64 /usr/bin/google-chrome /usr/bin/google-chrome
 COPY --from=amd64 /opt/google/chrome /opt/google/chrome
-COPY --from=amd64 /usr/bin/chromedriver /usr/bin/
 
 # Set the working directory in the container
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
 COPY . /app
-
+ 
 # Install dependencies
 COPY requirements.txt .
 RUN pip install -r requirements.txt
