@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Source the .env file
+set -a
+source .env
+set +a
+
 # Check if the OpenAI API key is set
 if ! grep -q "OPENAI_API_KEY" .env
 then
