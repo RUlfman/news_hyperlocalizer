@@ -24,22 +24,24 @@ RUN touch .env
 # Add a label to link the image to the GitHub repository
 LABEL org.opencontainers.image.source=https://github.com/RUlfman/news_hyperlocalizer
 
-# Install Chrome and Chromedriver for both architectures
-RUN apt-get update && apt-get install -y wget gnupg unzip && \
-    case "$TARGETPLATFORM" in \
-    "linux/amd64") \
+# Install common dependencies
+RUN apt-get update && apt-get install -y wget gnupg unzip
+
+# Install Chrome and Chromedriver for amd64 architecture
+RUN if [ "$TARGETPLATFORM" = "linux/amd64" ]; then \
         wget -qO - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - && \
         sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list' && \
-        apt-get update && apt-get install -y google-chrome-stable \
-        ;; \
-    "linux/arm64") \
+        apt-get update && apt-get install -y google-chrome-stable; \
+    fi
+
+# Install Chrome and Chromedriver for arm64 architecture
+RUN if [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
         wget -qO - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - && \
         apt-get update && apt-get install -y libxss1 libappindicator1 libindicator7 && \
         wget https://dl.google.com/linux/direct/google-chrome-stable_current_arm64.deb && \
         dpkg -i google-chrome-stable_current_arm64.deb || apt-get -fy install && \
-        rm google-chrome-stable_current_arm64.deb \
-        ;; \
-    esac
+        rm google-chrome-stable_current_arm64.deb; \
+    fi
 
 # Install Chromedriver
 RUN wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip && \
