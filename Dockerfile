@@ -17,19 +17,12 @@ RUN pip install -r requirements.txt
 # Create an empty .env file (if needed)
 RUN touch .env
 
-# Add a label to link the image to the GitHub repository
-LABEL org.opencontainers.image.source=https://github.com/RUlfman/news_hyperlocalizer
-
-# Please review all the latest versions here:
-# https://sites.google.com/a/chromium.org/chromedriver/
-ENV CHROMEDRIVER_VERSION=114.0.5735.90
-
-# Install Chrome and Chromedriver
-RUN apt-get update && apt-get install -y wget zip
-RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
-&& dpkg -i google-chrome-stable_current_amd64.deb || apt-get -fy install \
-&& rm google-chrome-stable_current_amd64.deb
-RUN wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip \
+# Install Chrome and Chromedriver for amd64 architecture
+RUN apt-get update && apt-get install -y wget gnupg unzip
+RUN wget -qO - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
+RUN apt-get update && apt-get install -y google-chrome-stable
+RUN wget -q https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip \
 && unzip chromedriver_linux64.zip && rm chromedriver_linux64.zip \
 && mv chromedriver /usr/local/bin/chromedriver \
 && chmod +x /usr/local/bin/chromedriver
@@ -37,20 +30,37 @@ RUN wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chrom
 # Second stage: arm64 architecture
 FROM --platform=linux/arm64 python:3
 
-# Copy the necessary files from the amd64 stage
-COPY --from=amd64 /usr/local/bin/chromedriver /usr/local/bin/chromedriver
-COPY --from=amd64 /usr/bin/google-chrome /usr/bin/google-chrome
-COPY --from=amd64 /opt/google/chrome /opt/google/chrome
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
 
 # Set the working directory in the container
 WORKDIR /app
 
+# Copy the dependencies file to the working directory
+COPY requirements.txt .
+
+# Install dependencies
+RUN pip install -r requirements.txt
+
+# Create an empty .env file (if needed)
+RUN touch .env
+
+# Install Chrome and Chromedriver for arm64 architecture
+RUN apt-get update && apt-get install -y wget gnupg unzip
+RUN wget -qO - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+RUN sh -c 'echo "deb [arch=arm64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
+RUN apt-get update && apt-get install -y google-chrome-stable
+RUN wget -q https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip \
+&& unzip chromedriver_linux64.zip && rm chromedriver_linux64.zip \
+&& mv chromedriver /usr/local/bin/chromedriver \
+&& chmod +x /usr/local/bin/chromedriver
+
 # Copy the current directory contents into the container at /app
 COPY . /app
- 
-# Install dependencies
-COPY requirements.txt .
-RUN pip install -r requirements.txt
+
+# Add a label to link the image to the GitHub repository
+LABEL org.opencontainers.image.source=https://github.com/RUlfman/news_hyperlocalizer
 
 # Expose port 8000 to the outside world
 EXPOSE 8000
