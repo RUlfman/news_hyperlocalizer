@@ -36,15 +36,17 @@ RUN if [ "$TARGETPLATFORM" = "linux/amd64" ]; then \
 
 # Install Chrome and Chromedriver for arm64 architecture
 RUN if [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
+        echo "Starting Chrome installation for arm64"; \
         wget -qO - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - && \
         apt-get update && apt-get install -y libxss1 libappindicator1 libindicator7 && \
         wget https://dl.google.com/linux/direct/google-chrome-stable_current_arm64.deb && \
         dpkg -i google-chrome-stable_current_arm64.deb; \
         if [ $? -ne 0 ]; then \
-            apt-get -fy install; \
-            dpkg -i google-chrome-stable_current_arm64.deb; \
+            echo "First dpkg install failed, running apt-get -fy install"; \
+            apt-get -fy install && dpkg -i google-chrome-stable_current_arm64.deb; \
         fi; \
         rm google-chrome-stable_current_arm64.deb; \
+        echo "Chrome installation for arm64 completed"; \
     fi
 
 # Install Chromedriver
