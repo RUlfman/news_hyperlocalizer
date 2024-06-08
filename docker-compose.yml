@@ -10,3 +10,6 @@ services:
       - "8000:8000"  # Expose port 8000 for Django
     volumes:
       - .:/app  # Mount the current directory to /app inside the container
+    environment:
+      - OPENAI_API_KEY=your_openai_api_key
+      - SMARTOCTO_API_KEY=your_smartocto_api_key
