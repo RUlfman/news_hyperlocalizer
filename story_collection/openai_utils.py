@@ -7,10 +7,15 @@ import json
 # Load env variables
 load_dotenv()
 
-
-
 # Specify the JSON schema's the AI model should follow in its response
 JSON_SCHEMAS = {
+    "url_collection": {
+        "type": "array",
+        "items": {
+            "type": "string",
+            "format": "uri"
+        }
+    },
     "story_collection": {
         "title": "string",
         "created": {
@@ -29,12 +34,11 @@ JSON_SCHEMAS = {
             "format": "uri"
         }
     },
-    "url_collection": {
-        "type": "array",
-        "items": {
-            "type": "string",
-            "format": "uri"
-        }
+    "story_summary": {
+        "summary": "string"
+    },
+    "summary_validation": {
+        "validation": "string"
     }
     # Add more JSON schemas for other analysis types
 }
@@ -48,7 +52,8 @@ def process_content_with_openai(setup_prompt, content, answer_format, schema):
         )
 
         if not setup_prompt:
-            setup_prompt = "You are a helpful assistant designed to output JSON. Your task is to process the given HTML content."
+            setup_prompt = "You are a helpful assistant designed to output JSON. Your task is to process the given " \
+                           "HTML content. "
 
         if not answer_format:
             answer_format = "Please return the URLs to the news stories in a JSON array."
@@ -63,7 +68,8 @@ def process_content_with_openai(setup_prompt, content, answer_format, schema):
                     {"role": "system", "content": answer_format},
                     {"role": "system", "content": f"Please follow this schema: {json.dumps(schema)}"},
                     {"role": "user", "content": content}
-                ]
+                ],
+                temperature=0.2  # Lower temperature for more deterministic results
             )
             print("response", response)
             content = response.choices[0].message.content
