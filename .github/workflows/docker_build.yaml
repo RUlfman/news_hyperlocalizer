@@ -10,6 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OWNER: ${{ github.repository_owner }}
+      TARGETPLATFORM: ${{ matrix.platform }}
+
+    strategy:
+      matrix:
+        platform: [linux/amd64, linux/arm64]
+
     steps:
       - name: Convert OWNER to lowercase
         run: echo "OWNER=$(echo $OWNER | tr '[A-Z]' '[a-z]')" >> $GITHUB_ENV
@@ -40,7 +46,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          platforms: linux/amd64,linux/arm64
+          platforms: ${{ matrix.platform }}
           build-args: |
-            TARGETPLATFORM=${{ matrix.platform }}
+            TARGETPLATFORM=${{ env.TARGETPLATFORM }}
           tags: ghcr.io/${{ env.OWNER }}/news_hyperlocalizer
