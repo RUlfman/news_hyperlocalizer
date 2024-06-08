@@ -50,14 +50,16 @@ class TestCollection(unittest.TestCase):
     @patch('story_collection.collection.process_content_with_openai')
     @patch('story_collection.collection.extract_story_content')
     @patch('story_collection.collection.Story.objects.update_or_create')
+    @patch('story_collection.collection.validate_summary')
     @patch('os.environ', {'OPENAI_API_KEY': 'test_openai_api_key' })
-    def test_extract_stories_from_urls(self, mock_update_or_create, mock_extract_story_content, mock_process_content_with_openai, mock_get_scraper):
+    def test_extract_stories_from_urls(self, mock_validate_summary, mock_update_or_create, mock_extract_story_content, mock_process_content_with_openai, mock_get_scraper):
         # Arrange
         mock_scraper = MagicMock()
         mock_get_scraper.return_value = mock_scraper
         mock_scraper.scrape_website.return_value = "<html></html>"
         mock_extract_story_content.return_value = "Test Story Content"
         mock_process_content_with_openai.return_value = '{"title": "Test Title", "created": "2022-01-01T00:00:00Z", "updated": "2022-01-01T00:00:00Z", "author": "Test Author", "story": "Test Story", "summary": "Test Summary", "image_url": "http://example.com/image.jpg"}'
+        mock_validate_summary.return_value = True
         urls = ["http://example.com/story1", "http://example.com/story2"]
         source = MagicMock()
 
@@ -71,6 +73,7 @@ class TestCollection(unittest.TestCase):
         mock_extract_story_content.assert_called()
         mock_process_content_with_openai.assert_called()
         mock_update_or_create.assert_called()
+        mock_validate_summary.assert_called()
 
     def test_sanitize_story_data(self):
         # Arrange

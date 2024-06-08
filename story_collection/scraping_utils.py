@@ -40,6 +40,7 @@ class DynamicWebsiteScraper(WebsiteScraper):
         chrome_options.add_argument("--headless")  # Ensure GUI is off
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--log-level=3")
 
         # Set path to chromedriver as per your configuration
         webdriver_service = Service(ChromeDriverManager().install())
