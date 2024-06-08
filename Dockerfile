@@ -2,7 +2,7 @@
 ARG TARGETPLATFORM=linux/amd64
 
 # Use a multi-architecture base image
-FROM --platform=$TARGETPLATFORM python:3
+FROM --platform=${TARGETPLATFORM} python:3
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
