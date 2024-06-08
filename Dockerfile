@@ -1,5 +1,5 @@
 # Set build arguments
-ARG TARGETPLATFORM
+ARG TARGETPLATFORM=linux/amd64
 
 # Use a multi-architecture base image
 FROM --platform=$TARGETPLATFORM python:3
