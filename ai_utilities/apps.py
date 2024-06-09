@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class StoryEvaluationConfig(AppConfig):
+class AiUtilitiesConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'story_evaluation'
+    name = 'ai_utilities'

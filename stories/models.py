@@ -68,6 +68,7 @@ class Story(models.Model):
 class StoryLabel(models.Model):
     story = models.ForeignKey(Story, on_delete=models.CASCADE)
     label = models.ForeignKey(Label, on_delete=models.CASCADE)
+    confidence = models.DecimalField(max_digits=3, decimal_places=2, default=1)
 
     class Meta:
         unique_together = ('story', 'label')

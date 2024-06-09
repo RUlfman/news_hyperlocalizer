@@ -1,3 +1,2 @@
-from django.db import models
-
-# Create your models here.
+from sources.models import Source
+from stories.models import Story, Label, StoryLabel, LabelType
