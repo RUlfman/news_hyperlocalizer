@@ -1,3 +1,6 @@
+import json
+
+from django.core.exceptions import ObjectDoesNotExist
 from rest_framework import generics, pagination
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.views import TokenObtainPairView
@@ -5,12 +8,11 @@ from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from drf_yasg.utils import swagger_auto_schema
 from drf_yasg import openapi
-from datetime import datetime
 from django.http import JsonResponse, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
-from .models import Source
 
 from story_collection.collection import collect_stories_from_source
+from story_evaluation.evaluation import evaluate_story
 from .serializers import *
 
 # Helper function to filter queryset based on query parameters
@@ -160,7 +162,7 @@ from rest_framework.decorators import api_view
         },
         required=['sourceid'],
     ),
-    responses={200: openapi.Response(description="Stories collected successfully")}
+    responses={200: openapi.Response(description="Stories collection initiated successfully")}
 )
 @api_view(['POST'])
 def collect_stories(request):
@@ -173,6 +175,74 @@ def collect_stories(request):
         except Source.DoesNotExist:
             return HttpResponseBadRequest("No Source object found with ID {}".format(source_id))
         collect_stories_from_source(source)
-        return JsonResponse({"message": "Stories collected successfully"})
+        return JsonResponse({"message": "Stories collection initiated successfully"})
     else:
         return HttpResponseBadRequest("Invalid HTTP method")
+
+
+@csrf_exempt
+@swagger_auto_schema(
+    method='post',
+    operation_description="Evaluate stories (classification, sentiment analysis, etc.)",
+    request_body=openapi.Schema(
+        type=openapi.TYPE_OBJECT,
+        properties={
+            'story_ids': openapi.Schema(type=openapi.TYPE_ARRAY, items=openapi.Schema(type=openapi.TYPE_INTEGER), description='List of story IDs'),
+        },
+        required=['story_ids'],
+    ),
+    responses={200: openapi.Response(description="Stories evaluation initiated successfully")}
+)
+@api_view(['POST'])
+def evaluate_stories(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            story_ids = data['story_ids']
+        except (KeyError, json.JSONDecodeError):
+            return JsonResponse({'error': 'Invalid JSON body'}, status=400)
+
+        for story_id in story_ids:
+            try:
+                story = Story.objects.get(id=story_id)
+                evaluate_story(story)
+            except ObjectDoesNotExist:
+                return JsonResponse({'error': f'Story with id {story_id} does not exist'}, status=404)
+
+        return JsonResponse({'message': 'Stories evaluation initiated successfully'})
+    else:
+        return JsonResponse({'error': 'Invalid HTTP method'}, status=405)
+
+
+@csrf_exempt
+@swagger_auto_schema(
+    method='post',
+    operation_description="Enrich stories with additional data",
+    request_body=openapi.Schema(
+        type=openapi.TYPE_OBJECT,
+        properties={
+            'story_ids': openapi.Schema(type=openapi.TYPE_ARRAY, items=openapi.Schema(type=openapi.TYPE_INTEGER), description='List of story IDs'),
+        },
+        required=['story_ids'],
+    ),
+    responses={200: openapi.Response(description="Stories enrichment initiated successfully")}
+)
+@api_view(['POST'])
+def enrich_stories(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            story_ids = data['story_ids']
+        except (KeyError, json.JSONDecodeError):
+            return JsonResponse({'error': 'Invalid JSON body'}, status=400)
+
+        for story_id in story_ids:
+            try:
+                story = Story.objects.get(id=story_id)
+                # TODO: This is a place holder! Add your enrichment function calls here
+            except ObjectDoesNotExist:
+                return JsonResponse({'error': f'Story with id {story_id} does not exist'}, status=404)
+
+        return JsonResponse({'message': 'Stories enrichment initiated successfully'})
+    else:
+        return JsonResponse({'error': 'Invalid HTTP method'}, status=405)

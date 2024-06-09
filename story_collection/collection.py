@@ -1,7 +1,7 @@
 import json
 
 from .models import Source, Story
-from .openai_utils import process_content_with_openai, JSON_SCHEMAS
+from ai_utilities.openai_utils import process_content_with_openai, JSON_SCHEMAS
 from .scraping_utils import get_scraper, extract_all_urls, extract_story_content
 from django.db import models
 from datetime import datetime

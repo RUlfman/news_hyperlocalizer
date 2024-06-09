@@ -39,7 +39,28 @@ JSON_SCHEMAS = {
     },
     "summary_validation": {
         "validation": "string"
-    }
+    },
+    "story_labels": {
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": ["LOCATION", "TOPIC", "CATEGORY", "AUDIENCE"]
+                },
+                "confidence": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                }
+            },
+            "required": ["name", "type", "confidence"]
+        }
+    },
     # Add more JSON schemas for other analysis types
 }
 
@@ -52,11 +73,10 @@ def process_content_with_openai(setup_prompt, content, answer_format, schema):
         )
 
         if not setup_prompt:
-            setup_prompt = "You are a helpful assistant designed to output JSON. Your task is to process the given " \
-                           "HTML content. "
+            setup_prompt = "You are a helpful assistant designed to output JSON. "
 
         if not answer_format:
-            answer_format = "Please return the URLs to the news stories in a JSON array."
+            answer_format = "Please respond in the provided JSON schema."
 
         # Call the OpenAI API
         try:
@@ -66,7 +86,7 @@ def process_content_with_openai(setup_prompt, content, answer_format, schema):
                 messages=[
                     {"role": "system", "content": setup_prompt},
                     {"role": "system", "content": answer_format},
-                    {"role": "system", "content": f"Please follow this schema: {json.dumps(schema)}"},
+                    {"role": "system", "content": f"Please make sure to follow this JSON schema: {json.dumps(schema)}"},
                     {"role": "user", "content": content}
                 ],
                 temperature=0.2  # Lower temperature for more deterministic results
@@ -74,11 +94,13 @@ def process_content_with_openai(setup_prompt, content, answer_format, schema):
             print("response", response)
             content = response.choices[0].message.content
             if 'error' in json.loads(content):
+                print(f"An error occurred: {content}")
                 return None
             else:
                 return content
         except HTTPError as e:
             print(f"An error occurred: {e}")
             return None
-    except Exception:
+    except Exception as e:
+        print("An error occurred while processing content with OpenAI: ", e)
         return None
