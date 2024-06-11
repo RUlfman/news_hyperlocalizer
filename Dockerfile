@@ -1,7 +1,7 @@
 # Set build arguments
 ARG TARGETPLATFORM=linux/amd64
 
-# Stage 1: Install dependencies
+# Stage 1: Base image for both architectures
 FROM python:3 as base
 
 # Set environment variables
@@ -32,10 +32,11 @@ RUN if [ "$TARGETPLATFORM" = "linux/amd64" ]; then \
         wget -qO - https://dl.google.com/linux/linux_signing_key.pub | apt-key add - && \
         sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list' && \
         apt-get update && apt-get install -y google-chrome-stable && \
-        wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip && \
+        wget https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip && \
         unzip chromedriver_linux64.zip && rm chromedriver_linux64.zip && \
         mv chromedriver /usr/local/bin/chromedriver && \
-        chmod +x /usr/local/bin/chromedriver; \
+        chmod +x /usr/local/bin/chromedriver && \
+        google-chrome --version && chromedriver --version; \
     fi
 
 # Stage 3: Install Chrome and Chromedriver for arm64 architecture
@@ -52,10 +53,11 @@ RUN if [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
             apt-get -fy install && dpkg -i google-chrome-stable_current_arm64.deb; \
         fi && \
         rm google-chrome-stable_current_arm64.deb && \
-        wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux_arm64.zip && \
+        wget https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux_arm64.zip && \
         unzip chromedriver_linux_arm64.zip && rm chromedriver_linux_arm64.zip && \
         mv chromedriver /usr/local/bin/chromedriver && \
-        chmod +x /usr/local/bin/chromedriver; \
+        chmod +x /usr/local/bin/chromedriver && \
+        google-chrome --version && chromedriver --version; \
     fi
 
 # Final stage: Copy the final image with Chrome installed
