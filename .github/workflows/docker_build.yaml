@@ -6,19 +6,11 @@ on:
       - main
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
-    env:
-      OWNER: ${{ github.repository_owner }}
-      TARGETPLATFORM: ${{ matrix.platform }}
-
-    strategy:
-      matrix:
-        platform: [linux/amd64, linux/arm64]
-
     steps:
       - name: Convert OWNER to lowercase
-        run: echo "OWNER=$(echo $OWNER | tr '[A-Z]' '[a-z]')" >> $GITHUB_ENV
+        run: echo "OWNER=$(echo ${{ github.repository_owner }} | tr '[A-Z]' '[a-z]')" >> $GITHUB_ENV
 
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -39,9 +31,6 @@ jobs:
           docker buildx create --name mybuilder --use
           docker buildx inspect --bootstrap
 
-      - name: Print TARGETPLATFORM
-        run: echo "TARGETPLATFORM is $TARGETPLATFORM"
-
       - name: Login to GitHub Container Registry
         uses: docker/login-action@v3
         with:
@@ -49,18 +38,15 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GHCR_TOKEN }}
 
-      - name: Build and push
-        id: build-and-push
+      - name: Build and push multi-platform image
         uses: docker/build-push-action@v5
         with:
           context: .
           file: ./Dockerfile
           push: true
-          platforms: ${{ matrix.platform }}
-          build-args: |
-            TARGETPLATFORM=${{ env.TARGETPLATFORM }}
+          platforms: linux/amd64,linux/arm64
           tags: ghcr.io/${{ env.OWNER }}/news_hyperlocalizer:latest
 
-      - name: Inspect the built image
+      - name: Inspect the final image
         run: |
           docker buildx imagetools inspect ghcr.io/${{ env.OWNER }}/news_hyperlocalizer:latest
