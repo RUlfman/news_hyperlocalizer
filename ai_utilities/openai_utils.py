@@ -48,10 +48,6 @@ JSON_SCHEMAS = {
                 "name": {
                     "type": "string"
                 },
-                "type": {
-                    "type": "string",
-                    "enum": ["LOCATION", "TOPIC", "CATEGORY", "AUDIENCE"]
-                },
                 "confidence": {
                     "type": "number",
                     "minimum": 0,

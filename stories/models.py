@@ -5,8 +5,7 @@ from sources.models import Source
 class LabelType(models.TextChoices):
     LOCATION = 'LOCATION', 'Locatie'
     TOPIC = 'TOPIC', 'Onderwerp'
-    CATEGORY = 'CATEGORY', 'Categorie'
-    AUDIENCE = 'AUDIENCE', 'Doelgroep'
+
 
 COLORS = ['#007bff', '#28a745', '#17a2b8', '#ffc107']  # Blue, Green, Cyan, Yellow
 
@@ -47,7 +46,6 @@ class Story(models.Model):
     labels = models.ManyToManyField(Label, through='StoryLabel', blank=True)
 
     def save(self, *args, **kwargs):
-
         user_needs = {
             'know': self.needsKnow,
             'understand': self.needsUnderstand,
