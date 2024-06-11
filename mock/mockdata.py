@@ -117,32 +117,6 @@ def assign_random_labels():
 def create_labels():
 
     # Define some label names and types
-    audience_labels = [
-        "Algemeen Publiek",
-        "Professionals",
-        "Studenten",
-        "Senioren",
-        "Tieners",
-        "Ouders",
-        "Tech Liefhebbers",
-        "Investeerders",
-        "Reizigers",
-        "Gezondheidsbewuste Personen"
-    ]
-
-    category_labels = [
-        "Politiek",
-        "Economie",
-        "Technologie",
-        "Sport",
-        "Amusement",
-        "Gezondheid",
-        "Wetenschap",
-        "Onderwijs",
-        "Milieu",
-        "Lifestyle"
-    ]
-
     location_labels = [
         "Eindhoven",
         "Tilburg",
@@ -180,10 +154,6 @@ def create_labels():
     ]
 
     # Create the labels
-    for label_name in audience_labels:
-        Label.objects.get_or_create(name=label_name, type=LabelType.AUDIENCE)
-    for label_name in category_labels:
-        Label.objects.get_or_create(name=label_name, type=LabelType.CATEGORY)
     for label_name in location_labels:
         Label.objects.get_or_create(name=label_name, type=LabelType.LOCATION)
     for label_name in topic_labels:
