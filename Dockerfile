@@ -51,8 +51,8 @@ RUN if [ "$TARGETPLATFORM" = "linux/arm64" ]; then \
             apt-get -fy install && dpkg -i google-chrome-stable_current_arm64.deb; \
         fi && \
         rm google-chrome-stable_current_arm64.deb && \
-        wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip && \
-        unzip chromedriver_linux64.zip && rm chromedriver_linux64.zip && \
+        wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux_arm64.zip && \
+        unzip chromedriver_linux_arm64.zip && rm chromedriver_linux_arm64.zip && \
         mv chromedriver /usr/local/bin/chromedriver && \
         chmod +x /usr/local/bin/chromedriver; \
     fi
