@@ -43,9 +43,8 @@ class DynamicWebsiteScraper(WebsiteScraper):
         chrome_options.add_argument("--log-level=3")
 
         # Set path to chromedriver as per your configuration
-        webdriver_service = Service(ChromeDriverManager().install())
+        webdriver_service = Service('/usr/bin/chromedriver')
 
-        # Choose Chrome Browser
         driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
         driver.get(url)
 
@@ -67,12 +66,9 @@ class AjaxWebsiteScraper(WebsiteScraper):
         chrome_options.add_argument("--disable-dev-shm-usage")
 
         # Set path to chromedriver as per your configuration
-        webdriver_service = Service(ChromeDriverManager().install())
+        webdriver_service = Service('/usr/bin/chromedriver')
 
-        # Initialize the Chrome driver with options
         driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
-
-        # Go to the URL
         driver.get(url)
 
         try:
