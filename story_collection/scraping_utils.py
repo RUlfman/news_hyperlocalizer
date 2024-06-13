@@ -37,16 +37,18 @@ class DynamicWebsiteScraper(WebsiteScraper):
     def scrape_website(self, url):
         # Setup Chrome options
         chrome_options = Options()
-        chrome_options.add_argument("--headless")  # Ensure GUI is off
+        chrome_options.add_argument("--headless")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--log-level=3")
 
-        # Set path to chromedriver as per your configuration
-        webdriver_service = Service('/usr/bin/chromedriver')
-
-        driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
-        driver.get(url)
+        try:
+            webdriver_service = Service('/usr/bin/chromedriver')
+            driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
+            driver.get(url)
+        except Exception as e:
+            print(f"An error occurred while trying to scrape {url}: {e}")
+            return None
 
         # This will ensure that the page is loaded before the html is retrieved
         WebDriverWait(driver, timeout=10).until(lambda d: d.execute_script('return document.readyState') == 'complete')
@@ -64,12 +66,15 @@ class AjaxWebsiteScraper(WebsiteScraper):
         chrome_options.add_argument("--headless")  # Ensure GUI is off
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.add_argument("--log-level=3")
 
-        # Set path to chromedriver as per your configuration
-        webdriver_service = Service('/usr/bin/chromedriver')
-
-        driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
-        driver.get(url)
+        try:
+            webdriver_service = Service('/usr/bin/chromedriver')
+            driver = webdriver.Chrome(service=webdriver_service, options=chrome_options)
+            driver.get(url)
+        except Exception as e:
+            print(f"An error occurred while trying to scrape {url}: {e}")
+            return None
 
         try:
             # Wait for the AJAX content to load

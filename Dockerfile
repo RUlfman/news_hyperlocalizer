@@ -1,9 +1,10 @@
 # Stage 1: Base image for both architectures
-FROM python:3.11-slim AS base
+FROM python:3.11-slim
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Set the working directory in the container
 WORKDIR /app
@@ -20,24 +21,18 @@ RUN touch .env
 # Add a label to link the image to the GitHub repository
 LABEL org.opencontainers.image.source=https://github.com/RUlfman/news_hyperlocalizer
 
-# Stage 2: Install Chromium and Chromedriver for amd64 architecture
-FROM base AS amd64
+# Install necessary packages
 RUN apt-get update && \
-    apt-get install -y wget gnupg unzip --no-install-recommends && \
-    apt-get install -y chromium chromium-driver && \
-    apt-get purge -y --auto-remove wget gnupg && \
-    rm -rf /var/lib/apt/lists/*
+    apt-get install -y \
+    chromium \
+    chromium-driver \
+    && rm -rf /var/lib/apt/lists/*
 
-# Stage 3: Install Chromium and Chromedriver for arm64 architecture
-FROM base AS arm64
-RUN apt-get update && \
-    apt-get install -y wget gnupg unzip --no-install-recommends && \
-    apt-get install -y chromium chromium-driver && \
-    apt-get purge -y --auto-remove wget gnupg && \
-    rm -rf /var/lib/apt/lists/*
+# Set up chromedriver executable path
+ENV PATH="/usr/lib/chromium:${PATH}"
 
-# Stage 4: Final stage to combine and copy the application code
-FROM base AS final
+# Confirm installation
+RUN chromium --version && chromedriver --version
 
 # Copy the current directory contents into the container at /app
 COPY . /app
