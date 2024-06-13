@@ -16,11 +16,11 @@ For using the repository, make sure you have the following...
 For development, you will also need...
 
 - **GitHub Account**: You will need a GitHub account to make changes to the codebase and access the GitHub Container Registry (GHCR). 
-- **Personal Access Token (PAT)**: You will need a PAT to push changes in the docker image to the GitHub Container Registry (GHCR). You can create a PAT by going to your GitHub account settings, selecting Developer settings, Personal access tokens, and then clicking Generate new token. Make sure to copy the token as you will not be able to see it again. The PAT should have the `read:packages` and `write:packages` scopes.
+- **Personal Access Token (PAT)**: You will need a PAT to push changes in the docker image to the GitHub Container Registry (GHCR). You can create a PAT by going to your GitHub account settings, selecting Developer settings, Personal access tokens, and then clicking Generate new token. Make sure to copy the token as you will not be able to see it again. The PAT should have the `delete:packages, read:org, read:repo, write:packages` scopes.
 
 ---
 ## :gear:Getting Started
-You can either use the repository entirely through docker by pulling and running the image, or by cloning the repository and building the image locally. Below instructions explain the first option.
+You can either use the repository entirely through docker by pulling and running the image, or by cloning the repository and building the image locally. Below instructions explain both options.
 
 ### Getting started using Docker
  
